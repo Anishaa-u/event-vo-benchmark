@@ -62,6 +62,8 @@ def errors(kit, mode, pattern="*_run*.txt"):
     res = {}
     for e in sorted(glob.glob(os.path.join(runs, pattern))):
         m = re.match(r"(.+)_run(\d+)\.txt$", os.path.basename(e))
+        if not m:
+            continue
         gt = os.path.join(runs, f"gt_{m.group(1)}.txt")
         t_e, p_e = load_tum(e)
         t_g, p_g = load_tum(gt)
@@ -93,6 +95,84 @@ def fig_error_over_time(panels, name):
     plt.close(fig)
 
 
+def fig_comparison():
+    """Three panels: ATE per sequence with run range, coverage, CPU and memory."""
+    import csv
+    lb = list(csv.DictReader(open(os.path.join(ROOT, "leaderboard.csv"))))
+    algos = [("esvio_chen2023", "ESVIO", GREEN, "esvio_kit", "se3"), ("esvo", "ESVO", BLUE, "esvo_pilot_kit", "se3"),
+             ("evo", "EVO", ORANGE, "evo_kit", "sim3")]
+    fig, axes = plt.subplots(1, 3, figsize=(11, 3.4))
+    # panel 1: ATE on MVSEC (stereo methods share these sequences)
+    ax = axes[0]
+    seqs = ["flying1", "flying3"]
+    for k, (aid, name, col, kit, al) in enumerate(algos[:2]):
+        res = list(csv.DictReader(open(os.path.join(ROOT, kit, "results.csv"))))
+        for j, s in enumerate(seqs):
+            v = [float(r["ate_se3_m"]) for r in res if r["sequence"] == s]
+            x = j + (k - 0.5) * 0.35
+            ax.bar(x, np.mean(v), 0.33, color=col, label=name if j == 0 else None)
+            ax.errorbar(x, np.mean(v), yerr=[[np.mean(v) - min(v)], [max(v) - np.mean(v)]], color="k", capsize=3, lw=1)
+            ax.text(x, max(v) + 0.012, f"{np.mean(v):.3f}", ha="center", fontsize=8)
+    ax.set_xticks([0, 1])
+    ax.set_xticklabels(["indoor_flying1", "indoor_flying3"])
+    ax.set_ylabel("ATE after SE(3) alignment (m)")
+    ax.set_title("Accuracy on shared MVSEC sequences", fontsize=10)
+    ax.legend(frameon=False, fontsize=8)
+    # panel 2: runs completed and coverage
+    ax = axes[1]
+    labels, cov, done, cols = [], [], [], []
+    for aid, name, col, kit, al in algos:
+        for r in lb:
+            if r["algorithm"] == aid:
+                labels.append(f"{name}\n{r['sequence'].replace('_6dof', '')}")
+                cov.append(float(r["coverage_mean_percent"]))
+                done.append(f"{r['runs_completed']}/{r['runs']}")
+                cols.append(col)
+    xs = np.arange(len(labels))
+    ax.bar(xs, cov, color=cols)
+    for x, c, d in zip(xs, cov, done):
+        ax.text(x, c + 2, d, ha="center", fontsize=8)
+    ax.set_xticks(xs)
+    ax.set_xticklabels(labels, fontsize=7.5)
+    ax.set_ylim(0, 112)
+    ax.set_ylabel("Mean tracking coverage (%)")
+    ax.set_title("Robustness (labels: runs completed)", fontsize=10)
+    # panel 3: CPU vs memory
+    ax = axes[2]
+    for aid, name, col, kit, al in algos:
+        rows = [r for r in lb if r["algorithm"] == aid]
+        c = [float(r["cpu_mean_percent_one_core"]) / 100 for r in rows]
+        m = [float(r["peak_memory_mb"]) / 1000 for r in rows]
+        ax.scatter(c, m, color=col, s=55, label=name, zorder=3)
+    ax.set_xlabel("Mean CPU use (cores)")
+    ax.set_ylabel("Peak memory (GB)")
+    ax.set_xlim(0, 6)
+    ax.set_ylim(0, 2)
+    ax.grid(alpha=0.25)
+    ax.legend(frameon=False, fontsize=8)
+    ax.set_title("Computational cost, per sequence", fontsize=10)
+    fig.tight_layout()
+    fig.savefig(os.path.join(OUT, "fig_comparison.png"), dpi=200, bbox_inches="tight")
+    plt.close(fig)
+
+
+def fig_errors():
+    panels = []
+    for title, kit, gt0 in (("indoor_flying1", "flying1", None), ("indoor_flying3", "flying3", None)):
+        series = {}
+        for name, kitdir, col in (("ESVIO", "esvio_kit", GREEN), ("ESVO", "esvo_pilot_kit", BLUE)):
+            for (seq, run), (t, err) in errors(kitdir, "se3").items():
+                if seq == kit:
+                    series[f"{name}, run {run}"] = (t, err, col, ["-", "--", ":"][run - 1])
+        if kit == "flying1":
+            for (seq, run), (t, err) in errors("esvo_pilot_kit", "se3", "pilot_0.5x/*_run*.txt").items():
+                series["ESVO, half-speed pilot"] = (t, err, ORANGE, "-")
+        panels.append((title, series))
+    fig_error_over_time(panels, "fig_error_time.png")
+
+
 if __name__ == "__main__":
     fig_pipeline()
+    fig_comparison()
+    fig_errors()
     print("figures in", OUT, os.listdir(OUT))
