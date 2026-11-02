@@ -1,5 +1,6 @@
 # ESVIO (Chen et al. 2023, arclab-hku/ESVIO) on ROS Noetic (Ubuntu 20.04), as its README specifies.
 # Build:  docker build -t esvio .
+# libceres-dev on Ubuntu 20.04 is Ceres 1.14.0, the version the ESVIO README requires.
 FROM osrf/ros:noetic-desktop
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -7,7 +8,7 @@ RUN apt-get update && apt-get install -y \
       python3-catkin-tools python3-psutil python3-numpy \
       git unzip autoconf automake libtool \
       libgoogle-glog-dev libgflags-dev libeigen3-dev libsuitesparse-dev libatlas-base-dev \
-      libyaml-cpp-dev libpcl-dev \
+      libyaml-cpp-dev libpcl-dev libceres-dev \
       ros-noetic-cv-bridge ros-noetic-image-transport ros-noetic-tf ros-noetic-pcl-ros \
       ros-noetic-image-geometry ros-noetic-camera-info-manager \
     && rm -rf /var/lib/apt/lists/*
@@ -30,7 +31,8 @@ WORKDIR /catkin_ws
 RUN apt-get update && (rosdep update --rosdistro noetic || true) \
  && rosdep install --from-paths src --ignore-src --rosdistro noetic -r -y \
  && rm -rf /var/lib/apt/lists/*
-RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && \
+# camera_model first: the other packages use it but do not declare it in package.xml
+RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin build camera_model && \
     catkin build esvio_estimator feature_tracker pose_graph"
 
 RUN cd /catkin_ws/src/ESVIO && git rev-parse HEAD > /catkin_ws/ESVIO_COMMIT.txt

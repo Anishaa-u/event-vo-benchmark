@@ -1,0 +1,2 @@
+shapes_6dof_run1 | rate 0.5x | bootstrap frames | wall 120.5 s (start 1793627839.708575714, end 1793627960.229056068) | poses 96 | node crashes during run 1 | Samples: 1224  Mean CPU (% of one core): 268.4  Peak memory: 712 MB  Logged for 126.3 s
+boxes_6dof_run1 | rate 0.5x | bootstrap frames | wall 122.5 s (start 1793627982.723751085, end 1793628105.260283831) | poses 366 | node crashes during run 1 | Samples: 1236  Mean CPU (% of one core): 480.7  Peak memory: 817 MB  Logged for 127.8 s

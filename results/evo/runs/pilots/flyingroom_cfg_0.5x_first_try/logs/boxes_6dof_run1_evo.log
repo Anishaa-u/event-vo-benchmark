@@ -1,0 +1,538 @@
+... logging to /root/.ros/log/a03cb178-d6c5-11f1-9463-62475130aabd/roslaunch-bc7e21e9ff09-2447.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/launch/flyingroom_headless.launch
+[1mstarted roslaunch server http://bc7e21e9ff09:41013/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /svo/
+
+PARAMETERS
+ * /calib_file: /catkin_ws/src/rp...
+ * /camera_name: DAVIS-ijrr
+ * /dvs_bootstrap_frame_id: /camera_0
+ * /dvs_bootstrapping/activation_threshold_min: 10
+ * /dvs_bootstrapping/activation_threshold_patch_size: 13
+ * /dvs_bootstrapping/adaptive_thresholding: True
+ * /dvs_bootstrapping/auto_trigger: True
+ * /dvs_bootstrapping/enable_visualizations: True
+ * /dvs_bootstrapping/events_offset: 0
+ * /dvs_bootstrapping/events_scale_factor: 4.0
+ * /dvs_bootstrapping/frame_size: 15000
+ * /dvs_bootstrapping/local_frame_size: 5000
+ * /dvs_bootstrapping/median_filter_size: 1
+ * /dvs_bootstrapping/median_filtering: False
+ * /dvs_bootstrapping/min_step_size: 15000
+ * /dvs_bootstrapping/motion_corrected_topic: /events/image_raw
+ * /dvs_bootstrapping/optical_flow_topic: /evo/bootstrap/op...
+ * /dvs_bootstrapping/rate_hz: 30
+ * /dvs_bootstrapping/unwarp_estimate_eps: 0.0001
+ * /dvs_bootstrapping/unwarp_estimate_n_it: 75
+ * /dvs_bootstrapping/unwarp_estimate_pyramid_lvls: 2
+ * /dvs_frame_id: /dvs_evo
+ * /dvs_mapping/accumulate_local_map_once_every: 25
+ * /dvs_mapping/adaptive_threshold_c: 7
+ * /dvs_mapping/adaptive_threshold_kernel_size: 5
+ * /dvs_mapping/auto_trigger: True
+ * /dvs_mapping/events_to_recreate_kf: 1000000
+ * /dvs_mapping/frame_size: 2048
+ * /dvs_mapping/global_point_cloud_skip_first: 15
+ * /dvs_mapping/half_patchsize: 1
+ * /dvs_mapping/median_filter_size: 15
+ * /dvs_mapping/min_batch_size: 20000
+ * /dvs_mapping/min_num_neighbors: 2
+ * /dvs_mapping/min_num_neighbors_global_map: 2
+ * /dvs_mapping/radius_search: 0.2
+ * /dvs_mapping/radius_search_global_map: 0.05
+ * /dvs_mapping/skip_batches: 0
+ * /dvs_mapping/type_focus_measure: 0
+ * /dvs_mapping/voxel_filter_leaf_size: 0.01
+ * /dvs_tracking/auto_trigger: True
+ * /dvs_tracking/batch_size: 500
+ * /dvs_tracking/discard_events_when_idle: True
+ * /dvs_tracking/event_map_overlap_rate: 15
+ * /dvs_tracking/events_per_kf: 100000
+ * /dvs_tracking/frame_size: 5000
+ * /dvs_tracking/map_blur: 3
+ * /dvs_tracking/max_event_rate: 4000000
+ * /dvs_tracking/max_iterations: 200
+ * /dvs_tracking/min_map_size: 200
+ * /dvs_tracking/min_n_keypoints: 2000
+ * /dvs_tracking/noise_rate: 10000
+ * /dvs_tracking/pose_mean_filter_size: 5
+ * /dvs_tracking/pyramid_levels: 2
+ * /dvs_tracking/step_size: 10000
+ * /dvs_tracking/weight_scale: 1.0
+ * /fov_virtual_camera_deg: 80.0
+ * /max_depth: 5
+ * /min_depth: 0.4
+ * /num_depth_cells: 100
+ * /pose_to_tf/relative_to_first_pose: False
+ * /pose_to_tf/source_topic_name: /svo/pose_cam/0
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /snakify/length: 100000
+ * /svo/T_world_imuinit/qw: 1
+ * /svo/T_world_imuinit/qx: 0
+ * /svo/T_world_imuinit/qy: 0
+ * /svo/T_world_imuinit/qz: 0
+ * /svo/calib_file: /catkin_ws/src/rp...
+ * /svo/cam0_topic: /dvs/image_raw
+ * /svo/depth_filter_affine_est_gain: False
+ * /svo/depth_filter_affine_est_offset: True
+ * /svo/detector_threshold_primary: 8
+ * /svo/detector_threshold_secondary: 200
+ * /svo/grid_size: 5
+ * /svo/img_align_est_illumination_gain: False
+ * /svo/img_align_est_illumination_offset: False
+ * /svo/img_align_max_level: 3
+ * /svo/img_align_min_level: 2
+ * /svo/img_align_prior_lambda_rot: 0.0
+ * /svo/img_align_prior_lambda_trans: 0.0
+ * /svo/init_min_disparity: 25
+ * /svo/kfselect_criterion: DOWNLOOKING
+ * /svo/kfselect_min_angle: 20
+ * /svo/kfselect_min_disparity: 30
+ * /svo/kfselect_min_dist_metric: 0.1
+ * /svo/kfselect_numkfs_lower_thresh: 70
+ * /svo/kfselect_numkfs_upper_thresh: 120
+ * /svo/map_scale: 0.6
+ * /svo/max_depth_inv: 0.05
+ * /svo/max_fts: 180
+ * /svo/max_n_kfs: 30
+ * /svo/mean_depth_inv: 0.3
+ * /svo/min_depth_inv: 1.0
+ * /svo/n_pyr_levels: 2
+ * /svo/pipeline_is_stereo: False
+ * /svo/pose[33m[ WARN] [1793627973.006389826]: Cannot find value for parameter: set_initial_attitude_from_gravity, assigning default: 1[0m
+[33m[ WARN] [1793627973.008009253]: Cannot find value for parameter: automatic_reinitialization, assigning default: 0[0m
+[0m[ INFO] [1793627973.003700558]: Found parameter: pipeline_is_stereo, value: 0[0m
+[0m[ INFO] [1793627973.010443891]: Found parameter: calib_file, value: /catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/parameters/calib/ncamera/DAVIS-ijrr.yaml[0m
+loaded 1 cameras
+  name = cam0
+  size = [240, 180]
+  Projection = Pinhole
+  Focal length = (199.092, 198.829)
+  Principal point = (132.192, 110.713)
+  Distortion: RadTan(0, 0, 0, 0)
+[33m[ WARN] [1793627973.015594571]: Cannot find value for parameter: klt_max_level, assigning default: 4[0m
+[33m[ WARN] [1793627973.016692254]: Cannot find value for parameter: klt_min_level, assigning default: 0[0m
+[33m[ WARN] [1793627973.024768747]: Cannot find value for parameter: reproject_unconverged_seeds, assigning default: 1[0m
+[33m[ WARN] [1793627973.030159489]: Cannot find value for parameter: init_min_features, assigning default: 100[0m
+[33m[ WARN] [1793627973.031382966]: Cannot find value for parameter: init_min_tracked, assigning default: 80[0m
+[33m[ WARN] [1793627973.032828933]: Cannot find value for parameter: init_min_inliers, assigning default: 70[0m
+[33m[ WARN] [1793627973.036721582]: Cannot find value for parameter: init_min_features_factor, assigning default: 2[0m
+[33m[ WARN] [1793627973.037707976]: Cannot find value for parameter: reproj_err_thresh, assigning default: 2[0m
+[33m[ WARN] [1793627973.038567251]: Cannot find value for parameter: init_disparity_pivot_ratio, assigning default: 0.5[0m
+[33m[ WARN] [1793627973.039542595]: Cannot find value for parameter: init_method, assigning default: FivePoint[0m
+[33m[ WARN] [1793627973.047998869]: Cannot find value for parameter: use_edgelets, assigning default: 1[0m
+[33m[ WARN] [1793627973.051430869]: Cannot find value for parameter: use_threaded_depthfilter, assigning default: 1[0m
+[33m[ WARN] [1793627973.062663406]: Cannot find value for parameter: max_seeds_ratio, assigning default: 3[0m
+[33m[ WARN] [1793627973.089869920]: Cannot find value for parameter: trace_dir, assigning default: /catkin_ws/src/rpg_dvs_evo_open/svo/trace[0m
+[33m[ WARN] [1793627973.091168412]: Cannot find value for parameter: quality_min_fts, assigning default: 50[0m
+[33m[ WARN] [1793627973.092563356]: Cannot find value for parameter: quality_max_drop_fts, assigning default: 40[0m
+[33m[ WARN] [1793627973.093748689]: Cannot find value for parameter: relocalization_max_trials, assigning default: 50[0m
+[33m[ WARN] [1793627973.106713188]: Cannot find value for parameter: structure_optimization_max_pts, assigning default: 20[0m
+[33m[ WARN] [1793627973.114908763]: Cannot find value for parameter: kfselect_min_dist, assigning default: 0.12[0m
+[33m[ WARN] [1793627973.128437130]: Cannot find value for parameter: kfselect_min_num_frames_between_kfs, assigning default: 2[0m
+[33m[ WARN] [1793627973.135617139]: Cannot find value for parameter: img_align_robustification, assigning default: 0[0m
+[33m[ WARN] [1793627973.137373338]: Cannot find value for parameter: img_align_use_distortion_jacobian, assigning default: 0[0m
+[33m[ WARN] [1793627973.152318027]: Cannot find value for parameter: T_world_imuinit/tz, assigning default: 0[0m
+[33m[ WARN] [1793627973.154047729]: Cannot find value for parameter: T_world_imuinit/ty, assigning default: 0[0m
+[33m[ WARN] [1793627973.155489390]: Cannot find value for parameter: T_world_imuinit/tx, assigning default: 0[0m
+[33m[ WARN] [1793627973.165354994]: Cannot find value for parameter: publish_img_pyr_level, assigning default: 0[0m
+[33m[ WARN] [1793627973.166815200]: Cannot find value for parameter: publish_every_nth_img, assigning default: 1[0m
+[33m[ WARN] [1793627973.172569949]: Cannot find value for parameter: publish_world_in_cam_frame, assigning default: 1[0m
+[33m[ WARN] [1793627973.173792002]: Cannot find value for parameter: publish_map_every_frame, assigning default: 0[0m
+[33m[ WARN] [1793627973.174906613]: Cannot find value for parameter: publish_point_display_time, assigning default: 0[0m
+[33m[ WARN] [1793627973.176112362]: Cannot find value for parameter: publish_seeds, assigning default: 1[0m
+[33m[ WARN] [1793627973.177212025]: Cannot find value for parameter: publish_seeds_uncertainty, assigning default: 0[0m
+[33m[ WARN] [1793627973.178259052]: Cannot find value for parameter: trace_pointcloud, assigning default: 0[0m
+[0m[ INFO] [1793627973.019385555]: Found parameter: reprojector_max_n_kfs, value: 5[0m
+[0m[ INFO] [1793627973.021743182]: Found parameter: max_fts, value: 180[0m
+[0m[ INFO] [1793627973.024065736]: Found parameter: grid_size, value: 5[0m
+[0m[ INFO] [1793627973.027361683]: Found parameter: reprojector_affine_est_offset, value: 1[0m
+[0m[ INFO] [1793627973.029344051]: Found parameter: reprojector_affine_est_gain, value: 0[0m
+[0m[ INFO] [1793627973.036062854]: Found parameter: init_min_disparity, value: 25[0m
+[0m[ INFO] [1793627973.041327655]: Found parameter: grid_size, value: 5[0m
+[0m[ INFO] [1793627973.042977823]: Found parameter: n_pyr_levels, value: 2[0m
+[0m[ INFO] [1793627973.045188798]: Found parameter: detector_threshold_primary, value: 8[0m
+[0m[ INFO] [1793627973.047399294]: Found parameter: detector_threshold_secondary, value: 200[0m
+[0m[ INFO] [1793627973.050626168]: Found parameter: n_pyr_levels, value: 2[0m
+[0m[ INFO] [1793627973.054151356]: Found parameter: seed_convergence_sigma2_thresh, value: 100[0m
+[0m[ INFO] [1793627973.055944674]: Found parameter: scan_epi_unit_sphere, value: 0[0m
+[0m[ INFO] [1793627973.057822124]: Found parameter: depth_filter_affine_est_offset, value: 1[0m
+[0m[ INFO] [1793627973.059828841]: Found parameter: depth_filter_affine_est_gain, value: 0[0m
+[0m[ INFO] [1793627973.061844885]: Found parameter: max_fts, value: 180[0m
+[0m[ INFO] [1793627973.065449530]: Found parameter: max_n_kfs, value: 30[0m
+[0m[ INFO] [1793627973.067415190]: Found parameter: use_imu, value: 0[0m
+[0m[ INFO] [1793627973.096480513]: Found parameter: poseoptim_prior_lambda, value: 0[0m
+[0m[ INFO] [1793627973.098726368]: Found parameter: poseoptim_using_unit_sphere, value: 0[0m
+[0m[ INFO] [1793627973.102323702]: Found parameter: img_align_prior_lambda_rot, value: 0[0m
+[0m[ INFO] [1793627973.105413819]: Found parameter: img_align_prior_lambda_trans, value: 0[0m
+[0m[ INFO] [1793627973.111603794]: Found parameter: map_scale, value: 0.6[0m
+[0m[ INFO] [1793627973.114021563]: Found parameter: kfselect_criterion, value: DOWNLOOKING[0m
+[0m[ INFO] [1793627973.118507003]: Found parameter: kfselect_numkfs_upper_thresh, value: 120[0m
+[0m[ INFO] [1793627973.121144497]: Found parameter: kfselect_numkfs_lower_thresh, value: 70[0m
+[0m[ INFO] [1793627973.123238276]: Found parameter: kfselect_min_dist_metric, value: 0.1[0m
+[0m[ INFO] [1793627973.125300818]: Found parameter: kfselect_min_angle, value: 20[0m
+[0m[ INFO] [1793627973.127401822]: Found parameter: kfselect_min_disparity, value: 30[0m
+[0m[ INFO] [1793627973.131824867]: Found parameter: img_align_max_level, value: 3[0m
+[0m[ INFO] [1793627973.134621877]: Found parameter: img_align_min_level, value: 2[0m
+[0m[ INFO] [1793627973.140631558]: Found parameter: img_align_est_illumination_gain, value: 0[0m
+[0m[ INFO] [1793627973.142955779]: Found parameter: img_align_est_illumination_offset, value: 0[0m
+[0m[ INFO] [1793627973.145420912]: Found parameter: poseoptim_thresh, value: 2[0m
+[0m[ INFO] [1793627973.147727333]: Found parameter: update_seeds_with_old_keyframes, value: 1[0m
+[0m[ INFO] [1793627973.150041574]: Found parameter: use_async_reprojectors, value: 0[0m
+[0m[ INFO] [1793627973.150542493]: DepthFilter: created.[0m
+[0m[ INFO] [1793627973.150671818]: DepthFilter: Start thread.[0m
+[0m[ INFO] [1793627973.158498043]: Found parameter: T_world_imuinit/qz, value: 0[0m
+[0m[ INFO] [1793627973.160064915]: Found parameter: T_world_imuinit/qy, value: 0[0m
+[0m[ INFO] [1793627973.162707037]: Found parameter: T_world_imuinit/qx, value: 0[0m
+[0m[ INFO] [1793627973.164707214]: Found parameter: T_world_imuinit/qw, value: 1[0m
+[0m[ INFO] [1793627973.169960855]: Found parameter: publish_every_nth_dense_input, value: 5[0m
+[0m[ INFO] [1793627973.180209939]: Found parameter: publish_marker_scale, value: 0.5[0m
+[0m[ INFO] [1793627973.198686974]: Found parameter: use_imu, value: 0[0m
+[0m[ INFO] [1793627973.201064427]: Found parameter: runlc, value: 0[0m
+[0m[ INFO] [1793627973.201808035]: SvoNode: Started Image lo[33m[ WARN] [1793627973.202653371]: Cannot find value for parameter: remote_key_topic, assigning default: svo/remote_key[0m
+I1102 13:59:33.714119  2488 depth_defocus_node.cpp:63] Focal length of virtual camera: 143.01 pixels
+[33m[ WARN] [1793627974.251106316]: Cannot find value for parameter: weight_scale_translation, assigning default: 0[0m
+[33m[ WARN] [1793627974.254680701]: Cannot find value for parameter: weight_scale_rotation, assigning default: 0[0m
+I1102 13:59:34.265411  2500 tracker.cpp:58] Field of view: 70.8728
+I1102 13:59:34.331718  2522 tracker.cpp:150] Spawned tracking thread.
+I1102 13:59:34.564615  2510 Bootstrapper.cpp:18] Bootstrapper initially idle: 0
+I1102 13:59:34.658511  2510 camera.cpp:21] Distortion type: plumb_bob
+[33m[ WARN] [1793627986.349926307]: Cannot find value for parameter: max_events_frames_saved_to_file, assigning default: 0[0m
+[33m[ WARN] [1793627986.353022174]: Cannot find value for parameter: events_frames_filename_format, assigning default: /media/user/data/example/%06d.bmp[0m
+I1102 13:59:49.847512  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:49.848309  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941034.420539635
+[33m[ WARN] [1793627989.851394222]: Cannot find value for parameter: skip_batches_for_reset, assigning default: 0[0m
+[33m[ WARN] [1793627989.854168539]: Cannot find value for parameter: max_event_rate, assigning default: 10000000[0m
+I1102 13:59:50.332857  2500 tracker.cpp:233] Received new map: 2285 points
+I1102 13:59:50.333580  2500 tracker.cpp:236] Auto-triggering tracking
+I1102 13:59:50.729856  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:50.733471  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:50.734270  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941034.816627634
+W1102 13:59:50.734823  2488 depth_defocus_node.cpp:540] 1468941033353961635 : Lookup would require extrapolation into the past.  Requested time 1468941033.353961635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.736563  2488 depth_defocus_node.cpp:540] 1468941033361654634 : Lookup would require extrapolation into the past.  Requested time 1468941033.361654634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.737074  2488 depth_defocus_node.cpp:540] 1468941033370304635 : Lookup would require extrapolation into the past.  Requested time 1468941033.370304635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.737509  2488 depth_defocus_node.cpp:540] 1468941033376895634 : Lookup would require extrapolation into the past.  Requested time 1468941033.376895634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.738324  2488 depth_defocus_node.cpp:540] 1468941033382651635 : Lookup would require extrapolation into the past.  Requested time 1468941033.382651635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.739270  2488 depth_defocus_node.cpp:540] 1468941033387796635 : Lookup would require extrapolation into the past.  Requested time 1468941033.387796635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.740127  2488 depth_defocus_node.cpp:540] 1468941033392512635 : Lookup would require extrapolation into the past.  Requested time 1468941033.392512635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.740875  2488 depth_defocus_node.cpp:540] 1468941033396936635 : Lookup would require extrapolation into the past.  Requested time 1468941033.396936635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.741307  2488 depth_defocus_node.cpp:540] 1468941033401852635 : Lookup would require extrapolation into the past.  Requested time 1468941033.401852635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.741834  2488 depth_defocus_node.cpp:540] 1468941033406134635 : Lookup would require extrapolation into the past.  Requested time 1468941033.406134635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.742311  2488 depth_defocus_node.cpp:540] 1468941033411172634 : Lookup would require extrapolation into the past.  Requested time 1468941033.411172634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.742847  2488 depth_defocus_node.cpp:540] 1468941033417409635 : Lookup would require extrapolation into the past.  Requested time 1468941033.417409635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.743414  2488 depth_defocus_node.cpp:540] 1468941033424199635 : Lookup would require extrapolation into the past.  Requested time 1468941033.424199635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.743904  2488 depth_defocus_node.cpp:540] 1468941033432892635 : Lookup would require extrapolation into the past.  Requested time 1468941033.432892635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.744658  2488 depth_defocus_node.cpp:540] 1468941033442129634 : Lookup would require extrapolation into the past.  Requested time 1468941033.442129634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.745124  2488 depth_defocus_node.cpp:540] 1468941033450835634 : Lookup would require extrapolation into the past.  Requested time 1468941033.450835634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.745554  2488 depth_defocus_node.cpp:540] 1468941033459041635 : Lookup would require extrapolation into the past.  Requested time 1468941033.459041635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.745990  2488 depth_defocus_node.cpp:540] 1468941033466144635 : Lookup would require extrapolation into the past.  Requested time 1468941033.466144635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.746609  2488 depth_defocus_node.cpp:540] 1468941033472179635 : Lookup would require extrapolation into the past.  Requested time 1468941033.472179635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.747138  2488 depth_defocus_node.cpp:540] 1468941033477271635 : Lookup would require extrapolation into the past.  Requested time 1468941033.477271635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.747589  2488 depth_defocus_node.cpp:540] 1468941033481979635 : Lookup would require extrapolation into the past.  Requested time 1468941033.481979635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.748153  2488 depth_defocus_node.cpp:540] 1468941033486416634 : Lookup would require extrapolation into the past.  Requested time 1468941033.486416634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.748802  2488 depth_defocus_node.cpp:540] 1468941033490678635 : Lookup would require extrapolation into the past.  Requested time 1468941033.490678635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.749259  2488 depth_defocus_node.cpp:540] 1468941033494654635 : Lookup would require extrapolation into the past.  Requested time 1468941033.494654635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.749838  2488 depth_defocus_node.cpp:540] 1468941033498652635 : Lookup would require extrapolation into the past.  Requested time 1468941033.498652635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.750428  2488 depth_defocus_node.cpp:540] 1468941033502352635 : Lookup would require extrapolation into the past.  Requested time 1468941033.502352635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.751027  2488 depth_defocus_node.cpp:540] 1468941033506471634 : Lookup would require extrapolation into the past.  Requested time 1468941033.506471634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.751529  2488 depth_defocus_node.cpp:540] 1468941033510581635 : Lookup would require extrapolation into the past.  Requested time 1468941033.510581635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.752053  2488 depth_defocus_node.cpp:540] 1468941033514493635 : Lookup would require extrapolation into the past.  Requested time 1468941033.514493635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.752882  2488 depth_defocus_node.cpp:540] 1468941033519026634 : Lookup would require extrapolation into the past.  Requested time 1468941033.519026634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.753489  2488 depth_defocus_node.cpp:540] 1468941033523921634 : Lookup would require extrapolation into the past.  Requested time 1468941033.523921634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.753923  2488 depth_defocus_node.cpp:540] 1468941033529102635 : Lookup would require extrapolation into the past.  Requested time 1468941033.529102635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.754519  2488 depth_defocus_node.cpp:540] 1468941033534069635 : Lookup would require extrapolation into the past.  Requested time 1468941033.534069635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.755187  2488 depth_defocus_node.cpp:540] 1468941033539298634 : Lookup would require extrapolation into the past.  Requested time 1468941033.539298634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.756358  2488 depth_defocus_node.cpp:540] 1468941033544241634 : Lookup would require extrapolation into the past.  Requested time 1468941033.544241634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.757392  2488 depth_defocus_node.cpp:540] 1468941033549903634 : Lookup would require extrapolation into the past.  Requested time 1468941033.549903634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.758198  2488 depth_defocus_node.cpp:540] 1468941033555554635 : Lookup would require extrapolation into the past.  Requested time 1468941033.555554635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.759464  2488 depth_defocus_node.cpp:540] 1468941033561343635 : Lookup would require extrapolation into the past.  Requested time 1468941033.561343635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.760136  2488 depth_defocus_node.cpp:540] 1468941033566908635 : Lookup would require extrapolation into the past.  Requested time 1468941033.566908635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.760890  2488 depth_defocus_node.cpp:540] 1468941033572205634 : Lookup would require extrapolation into the past.  Requested time 1468941033.572205634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.761487  2488 depth_defocus_node.cpp:540] 1468941033576633635 : Lookup would require extrapolation into the past.  Requested time 1468941033.576633635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.762212  2488 depth_defocus_node.cpp:540] 1468941033581350634 : Lookup would require extrapolation into the past.  Requested time 1468941033.581350634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.762936  2488 depth_defocus_node.cpp:540] 1468941033585451635 : Lookup would require extrapolation into the past.  Requested time 1468941033.585451635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.763688  2488 depth_defocus_node.cpp:540] 1468941033589465635 : Lookup would require extrapolation into the past.  Requested time 1468941033.589465635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.764391  2488 depth_defocus_node.cpp:540] 1468941033593047634 : Lookup would require extrapolation into the past.  Requested time 1468941033.593047634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.765002  2488 depth_defocus_node.cpp:540] 1468941033597172634 : Lookup would require extrapolation into the past.  Requested time 1468941033.597172634 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.765599  2488 depth_defocus_node.cpp:540] 1468941033601094635 : Lookup would require extrapolation into the past.  Requested time 1468941033.601094635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.766251  2488 depth_defocus_node.cpp:540] 1468941033604819635 : Lookup would require extrapolation into the past.  Requested time 1468941033.604819635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.766813  2488 depth_defocus_node.cpp:540] 1468941033608873635 : Lookup would require extrapolation into the past.  Requested time 1468941033.608873635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.767450  2488 depth_defocus_node.cpp:540] 1468941033612933635 : Lookup would require extrapolation into the past.  Requested time 1468941033.612933635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.768177  2488 depth_defocus_node.cpp:540] 1468941033616931635 : Lookup would require extrapolation into the past.  Requested time 1468941033.616931635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.768814  2488 depth_defocus_node.cpp:540] 1468941033621314635 : Lookup would require extrapolation into the past.  Requested time 1468941033.621314635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.769383  2488 depth_defocus_node.cpp:540] 1468941033625725635 : Lookup would require extrapolation into the past.  Requested time 1468941033.625725635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.770032  2488 depth_defocus_node.cpp:540] 1468941033630313635 : Lookup would require extrapolation into the past.  Requested time 1468941033.630313635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+W1102 13:59:50.770777  2488 depth_defocus_node.cpp:540] 1468941033634423635 : Lookup would require extrapolation into the past.  Requested time 1468941033.634423635 but the earliest data is at time 1468941033.637433635, when looking up transform from frame [dvs_evo] to frame [world]
+I1102 13:59:51.294819  2500 tracker.cpp:233] Received new map: 2348 points
+I1102 13:59:51.729518  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:51.733119  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:51.733795  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941035.337339635
+I1102 13:59:52.265285  2500 tracker.cpp:233] Received new map: 2551 points
+I1102 13:59:52.421527  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:52.426985  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:52.427703  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941035.644848634
+I1102 13:59:52.934120  2500 tracker.cpp:233] Received new map: 2759 points
+I1102 13:59:53.080274  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:53.084431  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:53.085116  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941035.993196635
+I1102 13:59:53.600419  2500 tracker.cpp:233] Received new map: 1959 points
+I1102 13:59:53.729724  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:53.732322  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:53.732899  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941036.333667634
+I1102 13:59:54.140628  2500 tracker.cpp:233] Received new map: 2177 points
+I1102 13:59:54.399852  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:54.404407  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:54.405470  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941036.510542635
+I1102 13:59:54.843132  2500 tracker.cpp:233] Received new map: 2350 points
+I1102 13:59:55.067044  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:55.070564  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:55.071301  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941036.997425634
+I1102 13:59:55.445305  2500 tracker.cpp:233] Received new map: 2266 points
+I1102 13:59:55.726639  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:55.733461  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:55.734705  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941037.321530635
+I1102 13:59:56.179132  2500 tracker.cpp:233] Received new map: 2117 points
+I1102 13:59:56.414697  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:56.418581  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:56.419556  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941037.648448634
+I1102 13:59:56.962172  2500 tracker.cpp:233] Received new map: 1659 points
+I1102 13:59:57.063054  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:57.067114  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:57.067998  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941037.975015635
+I1102 13:59:57.721608  2500 tracker.cpp:233] Received new map: 1598 points
+I1102 13:59:57.742027  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:57.745558  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:57.746742  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941038.308588634
+I1102 13:59:58.419481  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:58.425985  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:58.426759  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941038.549929634
+I1102 13:59:58.517565  2500 tracker.cpp:233] Received new map: 1780 points
+I1102 13:59:59.058291  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:59.063390  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:59.064405  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941038.678423634
+W1102 13:59:59.415818  2522 tracker.cpp:262] Losing track!
+W1102 13:59:59.506937  2522 tracker.cpp:262] Losing track!
+*** Aborted at 1793627999 (unix time) try "date -d @1793627999" if you are using GNU date ***
+PC: @     0x7923ddcf0da8 LKSE3::trackFrame()
+*** SIGFPE (@0x7923ddcf0da8) received by PID 2500 (TID 0x7923bc8df700) from PID 18446744073135918504; stack trace: ***
+    @     0x7923dd378f10 (unknown)
+    @     0x7923ddcf0da8 LKSE3::trackFrame()
+    @     0x7923ddcfad0a Tracker::estimateTrajectory()
+    @     0x7923ddcfb48c Tracker::trackingThread()
+    @     0x7923dda006df (unknown)
+    @     0x7923dc7e96db start_thread
+    @     0x7923dd45b61f clone
+I1102 13:59:59.718772  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 13:59:59.723308  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 13:59:59.724056  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941038.890266634
+I1102 14:00:00.051944  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 14:00:00.054924  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:00:00.055575  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941038.890266634
+I1102 14:00:00.387017  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 14:00:00.391052  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:00:00.391887  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941038.890266634
+I1102 14:00:00.719880  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 14:00:00.723327  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:00:00.724042  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941038.890266634
+I1102 14:00:01.049952  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 14:00:01.054407  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:00:01.055120  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941038.890266634
+I1102 14:00:01.383730  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 14:00:01.386809  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:00:01.387282  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941038.890266634
+I1102 14:00:01.716305  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 14:00:01.719408  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:00:01.720242  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941038.890266634
+[31m================================================================================REQUIRED process [dvs_tracking-6] has died!
+process has died [pid 2500, exit code -8, cmd /catkin_ws/devel/lib/dvs_tracking/dvs_tracking_ros events:=/dvs/events remote_key:=/evo/remote_key pointcloud:=dvs_mapping/pointcloud __name:=dvs_tracking __log:=/root/.ros/log/a03cb178-d6c5-11f1-9463-62475130aabd/dvs_tracking-6.log].
+log file: /root/.ros/log/a03cb178-d6c5-11f1-9463-62475130aabd/dvs_tracking-6*.log
+Initiating shutdown!
+================================================================================[0m
+I1102 14:00:02.053808  2488 depth_defocus_node.cpp:205] Received command: update
+I1102 14:00:02.057849  2488 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:00:02.058745  2488 depth_defocus_node.cpp:442] Setting KF at time: 1468941038.890266634
+[INFO] [1793627990.336407]: Received map: 2285 points
+[INFO] [1793627990.725774]: Sending update, coverage: 76.1064814815 %, map visibility: 75.6673960613 %, baseline/depth: 0.0145099007598
+[INFO] [1793627991.280645]: Received map: 2348 points
+[INFO] [1793627991.726506]: Sending update, coverage: 84.1342592593 %, map visibility: 90.8858603066 %, baseline/depth: 0.178459501463
+[INFO] [1793627992.241770]: Received map: 2551 points
+[INFO] [1793627992.417487]: Sending update, coverage: 68.0115740741 %, map visibility: 71.8149745198 %, baseline/depth: 0.0220154793416
+[INFO] [1793627992.882492]: Received map: 2759 points
+[INFO] [1793627993.075508]: Sending update, coverage: 57.8842592593 %, map visibility: 61.9064878579 %, baseline/depth: 0.159419103839
+[INFO] [1793627993.569771]: Received map: 1959 points
+[INFO] [1793627993.726126]: Sending update, coverage: 38.287037037 %, map visibility: 43.6447166922 %, baseline/depth: 0.0872946717932
+[INFO] [1793627994.143065]: Received map: 2177 points
+[INFO] [1793627994.395337]: Sending update, coverage: 50.2777777778 %, map visibility: 56.0863573725 %, baseline/depth: 0.0424645827988
+[INFO] [1793627994.825270]: Received map: 2350 points
+[INFO] [1793627995.063122]: Sending update, coverage: 65.9305555556 %, map visibility: 75.3617021277 %, baseline/depth: 0.0405180557724
+[INFO] [1793627995.449308]: Received map: 2266 points
+[INFO] [1793627995.721403]: Sending update, coverage: 75.5208333333 %, map visibility: 84.0688437776 %, baseline/depth: 0.100812391805
+[INFO] [1793627996.183092]: Received map: 2117 points
+[INFO] [1793627996.410355]: Sending update, coverage: 66.7314814815 %, map visibility: 80.0661313179 %, baseline/depth: 0.056308953347
+[INFO] [1793627996.890491]: Received map: 1659 points
+[INFO] [1793627997.055500]: Sending update, coverage: 58.8333333333 %, map visibility: 77.7576853526 %, baseline/depth: 0.0534340809644
+[INFO] [1793627997.618166]: Received map: 1598 points
+[INFO] [1793627997.736122]: Sending update, coverage: 55.2939814815 %, map visibility: 78.4105131414 %, baseline/depth: 0.0912640302218
+[INFO] [1793627998.275837]: Received map: 1780 points
+[INFO] [1793627998.411043]: Sending update, coverage: 37.7268518519 %, map visibility: 36.6255144033 %, baseline/depth: 0.144258346664
+[INFO] [1793627999.002960]: Received map: 43 points
+[INFO] [1793627999.053675]: Sending update, coverage: 2.21296296296 %, map visibility: 100.0 %, baseline/depth: 0.0169324532559
+[INFO] [1793627999.513654]: Received map: 28 points
+[INFO] [1793627999.715290]: Sending update, coverage: 0.0 %, map visibility: 0.0 %, baseline/depth: 0.0
+[INFO] [1793628000.008962]: Received map: 53 points
+[INFO] [1793628000.047992]: Sending update, coverage: 5.09953703704 %, map visibility: 100.0 %, baseline/depth: 0.0
+[INFO] [1793628000.356015]: Received map: 53 points
+[INFO] [1793628000.382546]: Sending update, coverage: 5.09953703704 %, map visibility: 100.0 %, baseline/depth: 0.0
+[INFO] [1793628000.695123]: Received map: 53 points
+[INFO] [1793628000.715202]: Sending update, coverage: 5.09953703704 %, map visibility: 100.0 %, baseline/depth: 0.0
+[INFO] [1793628001.008611]: Received map: 53 points
+[INFO] [1793628001.047269]: Sending update, coverage: 5.09953703704 %, map visibility: 100.0 %, baseline/depth: 0.0
+[INFO] [1793628001.344394]: Received map: 53 points
+[INFO] [1793628001.381141]: Sending update, coverage: 5.09953703704 %, map visibility: 100.0 %, baseline/depth: 0.0
+[INFO] [1793628001.675633]: Received map: 53 points
+[INFO] [1793628001.713690]: Sending update, coverage: 5.09953703704 %, map visibility: 100.0 %, baseline/depth: 0.0
+[INFO] [1793628001.936496]: Received map: 53 points
+[INFO] [1793628002.048770]: Sending update, coverage: 5.09953703704 %, map visibility: 100.0 %, baseline/depth: 0.0
+[0m[ INFO] [1793627973.613660243]: Found parameter: camera_name, value: DAVIS-ijrr[0m
+[0m[ INFO] [1793627973.618979609]: Found parameter: calib_file, value: /catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/parameters/calib/DAVIS-ijrr.yaml[0m
+[0m[ INFO] [1793627973.620397075]: camera calibration URL: file:///catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/parameters/calib/DAVIS-ijrr.yaml[0m
+[0m[ INFO] [1793627973.656777630]: Found parameter: radius_search, value: 0.2[0m
+[0m[ INFO] [1793627973.659104804]: Found parameter: min_num_neighbors, value: 2[0m
+[0m[ INFO] [1793627973.661693700]: Found parameter: median_filter_size, value: 15[0m
+[0m[ INFO] [1793627973.664010305]: Found parameter: dvs_frame_id, value: /dvs_evo[0m
+[0m[ INFO] [1793627973.666305189]: Found parameter: dvs_bootstrap_frame_id, value: /camera_0[0m
+[0m[ INFO] [1793627973.668689868]: Found parameter: world_frame_id, value: /world[0m
+[0m[ INFO] [1793627973.699049618]: Found parameter: events_to_recreate_kf, value: 1000000[0m
+[0m[ INFO] [1793627973.709843308]: Found parameter: fov_virtual_camera_deg, value: 80[0m
+[0m[ INFO] [1793627973.711596592]: Found parameter: virtual_width, value: 240[0m
+[0m[ INFO] [1793627973.713997580]: Found parameter: virtual_height, value: 180[0m
+[0m[ INFO] [1793627973.783243350]: Found parameter: min_depth, value: 0.4[0m
+[0m[ INFO] [1793627973.788653072]: Found parameter: max_depth, value: 5[0m
+[0m[ INFO] [1793627973.791117019]: Found parameter: num_depth_cells, value: 100[0m
+[0m[ INFO] [1793627973.793735830]: Found parameter: adaptive_threshold_kernel_size, value: 5[0m
+[0m[ INFO] [1793627973.796124824]: Found parameter: adaptive_threshold_c, value: 7[0m
+[0m[ INFO] [1793627973.836822838]: Found parameter: auto_trigger, value: 1[0m
+[0m[ INFO] [1793627989.850765425]: Found parameter: skip_batches, value: 0[0m
+[0m[ INFO] [1793627989.859427952]: Found parameter: frame_size, value: 2048[0m
+[0m[ INFO] [1793627989.861152663]: Found parameter: min_batch_size, value: 20000[0m
+[0m[ INFO] [1793627990.281340942]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627990.348375372]: Found parameter: accumulate_local_map_once_every, value: 25[0m
+[0m[ INFO] [1793627990.357769650]: Found parameter: global_point_cloud_skip_first, value: 15[0m
+[0m[ INFO] [1793627991.215315743]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627992.189312266]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627992.832913307]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627993.512233995]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627994.097496804]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627994.782746199]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627995.404631062]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627996.138293634]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627996.814186855]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627997.565806919]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627998.209368317]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627998.977542134]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627999.472233564]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793627999.955391283]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628000.323022299]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628000.658096118]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628000.969997259]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628001.302186417]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628001.645825420]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628001.904462056]: Found parameter: type_focus_measure, value: 0[0m
+op.[0m
+[0m[ INFO] [1793627973.211206465]: Found parameter: cam0_topic, value: /dvs/image_raw[0m
+[0m[ INFO] [1793627985.599061825]: DepthFilter: RESET.[0m
+[0m[ INFO] [1793627988.293985987]: Init: Triangulated 777 points[0m
+[0m[ INFO] [1793627974.561961761]: Found parameter: auto_trigger, value: 1[0m
+[0m[ INFO] [1793627974.568980592]: Found parameter: camera_name, value: DAVIS-ijrr[0m
+[0m[ INFO] [1793627974.571154805]: Found parameter: calib_file, value: /catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/parameters/calib/DAVIS-ijrr.yaml[0m
+[0m[ INFO] [1793627974.572231977]: camera calibration URL: file:///catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/parameters/calib/DAVIS-ijrr.yaml[0m
+[0m[ INFO] [1793627974.589015056]: Found parameter: world_frame_id, value: /world[0m
+[0m[ INFO] [1793627974.591720872]: Found parameter: dvs_bootstrap_frame_id, value: /camera_0[0m
+[0m[ INFO] [1793627974.642524315]: Found parameter: unwarp_estimate_n_it, value: 75[0m
+[0m[ INFO] [1793627974.647664844]: Found parameter: unwarp_estimate_eps, value: 0.0001[0m
+[0m[ INFO] [1793627974.654999804]: Found parameter: unwarp_estimate_pyramid_lvls, value: 2[0m
+[0m[ INFO] [1793627974.667893356]: Found parameter: rate_hz, value: 30[0m
+[0m[ INFO] [1793627974.671314009]: Found parameter: frame_size, value: 15000[0m
+[0m[ INFO] [1793627974.673649773]: Found parameter: local_frame_size, value: 5000[0m
+[0m[ INFO] [1793627974.676043809]: Found parameter: enable_visualizations, value: 1[0m
+[0m[ INFO] [1793627974.678402199]: Found parameter: motion_corrected_topic, value: /events/image_raw[0m
+[0m[ INFO] [1793627974.685154176]: Found parameter: optical_flow_topic, value: /evo/bootstrap/optical_flow[0m
+[0m[ INFO] [1793627974.725117167]: Found parameter: min_step_size, value: 15000[0m
+[0m[ INFO] [1793627974.727003582]: Found parameter: events_scale_factor, value: 4[0m
+[0m[ INFO] [1793627974.728590110]: Found parameter: activation_threshold_min, value: 10[0m
+[0m[ INFO] [1793627974.730658932]: Found parameter: activation_threshold_patch_size, value: 13[0m
+[0m[ INFO] [1793627974.732785514]: Found parameter: median_filter_size, value: 1[0m
+[0m[ INFO] [1793627974.736104813]: Found parameter: median_filtering, value: 0[0m
+[0m[ INFO] [1793627974.738999157]: Found parameter: adaptive_thresholding, value: 1[0m
+optim_prior_lambda: 0.0
+ * /svo/poseoptim_thresh: 2.0
+ * /svo/poseoptim_using_unit_sphere: False
+ * /svo/publish_every_nth_dense_input: 5
+ * /svo/publish_marker_scale: 0.5
+ * /svo/reprojector_affine_est_gain: False
+ * /svo/reprojector_affine_est_offset: True
+ * /svo/reprojector_max_n_kfs: 5
+ * /svo/runlc: False
+ * /svo/scan_epi_unit_sphere: False
+ * /svo/seed_convergence_sigma2_thresh: 100
+ * /svo/update_seeds_with_old_keyframes: True
+ * /svo/use_async_reprojectors: False
+ * /svo/use_imu: False
+ * /tf_to_camera_marker/marker_scale: 0.2
+ * /trigger_map_expansion/baseline_threshold: 0.1
+ * /trigger_map_expansion/coverage_threshold: 0.4
+ * /trigger_map_expansion/number_of_initial_maps_to_skip: 0
+ * /trigger_map_expansion/rate: 3
+ * /trigger_map_expansion/visibility_threshold: 0.9
+ * /virtual_height: 180
+ * /virtual_width: 240
+ * /world_frame_id: /world
+
+NODES
+  /
+    dvs_bootstrapping (dvs_bootstrapping/dvs_bootstrapping_ef_ros)
+    dvs_mapping (dvs_mapping/dvs_mapping_ros)
+    dvs_tracking (dvs_tracking/dvs_tracking_ros)
+    pose_to_tf (dvs_bootstrapping/pose_to_tf.py)
+    snakify (evo_utils/snakify.py)
+    svo (svo_ros/svo_node)
+    tf_to_camera_marker (evo_utils/tf_to_camera_markers.py)
+    trigger_map_expansion (dvs_mapping/trigger_map_expansion.py)
+
+auto-starting new master
+[1mprocess[master]: started with pid [2462][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/launch/flyingroom_headless.launch http://localhost:11311
+[1msetting /run_id to a03cb178-d6c5-11f1-9463-62475130aabd[0m
+[1mprocess[rosout-1]: started with pid [2473][0m
+started core service [/rosout]
+[1mprocess[svo-2]: started with pid [2481][0m
+[1mprocess[pose_to_tf-3]: started with pid [2482][0m
+[1mprocess[dvs_mapping-4]: started with pid [2488][0m
+[1mprocess[trigger_map_expansion-5]: started with pid [2494][0m
+[1mprocess[dvs_tracking-6]: started with pid [2500][0m
+[1mprocess[dvs_bootstrapping-7]: started with pid [2510][0m
+[1mprocess[tf_to_camera_marker-8]: started with pid [2523][0m
+[1mprocess[snakify-9]: started with pid [2531][0m
+[snakify-9] killing on exit
+[tf_to_camera_marker-8] killing on exit
+[dvs_bootstrapping-7] killing on exit
+[dvs_tracking-6] killing on exit
+[trigger_map_expansion-5] killing on exit
+[dvs_mapping-4] killing on exit
+[pose_to_tf-3] killing on exit
+[svo-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

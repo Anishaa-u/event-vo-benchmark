@@ -1,0 +1,530 @@
+... logging to /root/.ros/log/5918dd98-d6c6-11f1-b8c4-62475130aabd/roslaunch-bc7e21e9ff09-3021.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/launch/flyingroom_headless.launch
+[1mstarted roslaunch server http://bc7e21e9ff09:36269/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /svo/
+
+PARAMETERS
+ * /calib_file: /catkin_ws/src/rp...
+ * /camera_name: DAVIS-ijrr
+ * /dvs_bootstrap_frame_id: /camera_0
+ * /dvs_bootstrapping/activation_threshold_min: 10
+ * /dvs_bootstrapping/activation_threshold_patch_size: 13
+ * /dvs_bootstrapping/adaptive_thresholding: True
+ * /dvs_bootstrapping/auto_trigger: True
+ * /dvs_bootstrapping/enable_visualizations: True
+ * /dvs_bootstrapping/events_offset: 0
+ * /dvs_bootstrapping/events_scale_factor: 4.0
+ * /dvs_bootstrapping/frame_size: 15000
+ * /dvs_bootstrapping/local_frame_size: 5000
+ * /dvs_bootstrapping/median_filter_size: 1
+ * /dvs_bootstrapping/median_filtering: False
+ * /dvs_bootstrapping/min_step_size: 15000
+ * /dvs_bootstrapping/motion_corrected_topic: /events/image_raw
+ * /dvs_bootstrapping/optical_flow_topic: /evo/bootstrap/op...
+ * /dvs_bootstrapping/rate_hz: 30
+ * /dvs_bootstrapping/unwarp_estimate_eps: 0.0001
+ * /dvs_bootstrapping/unwarp_estimate_n_it: 75
+ * /dvs_bootstrapping/unwarp_estimate_pyramid_lvls: 2
+ * /dvs_frame_id: /dvs_evo
+ * /dvs_mapping/accumulate_local_map_once_every: 25
+ * /dvs_mapping/adaptive_threshold_c: 7
+ * /dvs_mapping/adaptive_threshold_kernel_size: 5
+ * /dvs_mapping/auto_trigger: True
+ * /dvs_mapping/events_to_recreate_kf: 1000000
+ * /dvs_mapping/frame_size: 2048
+ * /dvs_mapping/global_point_cloud_skip_first: 15
+ * /dvs_mapping/half_patchsize: 1
+ * /dvs_mapping/median_filter_size: 15
+ * /dvs_mapping/min_batch_size: 20000
+ * /dvs_mapping/min_num_neighbors: 2
+ * /dvs_mapping/min_num_neighbors_global_map: 2
+ * /dvs_mapping/radius_search: 0.2
+ * /dvs_mapping/radius_search_global_map: 0.05
+ * /dvs_mapping/skip_batches: 0
+ * /dvs_mapping/type_focus_measure: 0
+ * /dvs_mapping/voxel_filter_leaf_size: 0.01
+ * /dvs_tracking/auto_trigger: True
+ * /dvs_tracking/batch_size: 500
+ * /dvs_tracking/discard_events_when_idle: True
+ * /dvs_tracking/event_map_overlap_rate: 15
+ * /dvs_tracking/events_per_kf: 100000
+ * /dvs_tracking/frame_size: 5000
+ * /dvs_tracking/map_blur: 3
+ * /dvs_tracking/max_event_rate: 4000000
+ * /dvs_tracking/max_iterations: 200
+ * /dvs_tracking/min_map_size: 200
+ * /dvs_tracking/min_n_keypoints: 2000
+ * /dvs_tracking/noise_rate: 10000
+ * /dvs_tracking/pose_mean_filter_size: 5
+ * /dvs_tracking/pyramid_levels: 2
+ * /dvs_tracking/step_size: 10000
+ * /dvs_tracking/weight_scale: 1.0
+ * /fov_virtual_camera_deg: 80.0
+ * /max_depth: 5
+ * /min_depth: 0.4
+ * /num_depth_cells: 100
+ * /pose_to_tf/relative_to_first_pose: False
+ * /pose_to_tf/source_topic_name: /svo/pose_cam/0
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /snakify/length: 100000
+ * /svo/T_world_imuinit/qw: 1
+ * /svo/T_world_imuinit/qx: 0
+ * /svo/T_world_imuinit/qy: 0
+ * /svo/T_world_imuinit/qz: 0
+ * /svo/calib_file: /catkin_ws/src/rp...
+ * /svo/cam0_topic: /dvs/image_raw
+ * /svo/depth_filter_affine_est_gain: False
+ * /svo/depth_filter_affine_est_offset: True
+ * /svo/detector_threshold_primary: 8
+ * /svo/detector_threshold_secondary: 200
+ * /svo/grid_size: 5
+ * /svo/img_align_est_illumination_gain: False
+ * /svo/img_align_est_illumination_offset: False
+ * /svo/img_align_max_level: 3
+ * /svo/img_align_min_level: 2
+ * /svo/img_align_prior_lambda_rot: 0.0
+ * /svo/img_align_prior_lambda_trans: 0.0
+ * /svo/init_min_disparity: 25
+ * /svo/kfselect_criterion: DOWNLOOKING
+ * /svo/kfselect_min_angle: 20
+ * /svo/kfselect_min_disparity: 30
+ * /svo/kfselect_min_dist_metric: 0.1
+ * /svo/kfselect_numkfs_lower_thresh: 70
+ * /svo/kfselect_numkfs_upper_thresh: 120
+ * /svo/map_scale: 0.6
+ * /svo/max_depth_inv: 0.05
+ * /svo/max_fts: 180
+ * /svo/max_n_kfs: 30
+ * /svo/mean_depth_inv: 0.3
+ * /svo/min_depth_inv: 1.0
+ * /svo/n_pyr_levels: 2
+ * /svo/pipeline_is_stereo: False
+ * /svo/pose[33m[ WARN] [1793628282.554343934]: Cannot find value for parameter: set_initial_attitude_from_gravity, assigning default: 1[0m
+[33m[ WARN] [1793628282.555721441]: Cannot find value for parameter: automatic_reinitialization, assigning default: 0[0m
+[0m[ INFO] [1793628282.550879788]: Found parameter: pipeline_is_stereo, value: 0[0m
+[0m[ INFO] [1793628282.558217155]: Found parameter: calib_file, value: /catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/parameters/calib/ncamera/DAVIS-ijrr.yaml[0m
+loaded 1 cameras
+  name = cam0
+  size = [240, 180]
+  Projection = Pinhole
+  Focal length = (199.092, 198.829)
+  Principal point = (132.192, 110.713)
+  Distortion: RadTan(0, 0, 0, 0)
+[33m[ WARN] [1793628282.564032012]: Cannot find value for parameter: klt_max_level, assigning default: 4[0m
+[33m[ WARN] [1793628282.565096223]: Cannot find value for parameter: klt_min_level, assigning default: 0[0m
+[33m[ WARN] [1793628282.571467829]: Cannot find value for parameter: reproject_unconverged_seeds, assigning default: 1[0m
+[33m[ WARN] [1793628282.575982302]: Cannot find value for parameter: init_min_features, assigning default: 100[0m
+[33m[ WARN] [1793628282.577234233]: Cannot find value for parameter: init_min_tracked, assigning default: 80[0m
+[33m[ WARN] [1793628282.578426371]: Cannot find value for parameter: init_min_inliers, assigning default: 70[0m
+[33m[ WARN] [1793628282.581239484]: Cannot find value for parameter: init_min_features_factor, assigning default: 2[0m
+[33m[ WARN] [1793628282.582490923]: Cannot find value for parameter: reproj_err_thresh, assigning default: 2[0m
+[33m[ WARN] [1793628282.583684346]: Cannot find value for parameter: init_disparity_pivot_ratio, assigning default: 0.5[0m
+[33m[ WARN] [1793628282.584945487]: Cannot find value for parameter: init_method, assigning default: FivePoint[0m
+[33m[ WARN] [1793628282.591789679]: Cannot find value for parameter: use_edgelets, assigning default: 1[0m
+[33m[ WARN] [1793628282.594754256]: Cannot find value for parameter: use_threaded_depthfilter, assigning default: 1[0m
+[33m[ WARN] [1793628282.606651341]: Cannot find value for parameter: max_seeds_ratio, assigning default: 3[0m
+[33m[ WARN] [1793628282.626186350]: Cannot find value for parameter: trace_dir, assigning default: /catkin_ws/src/rpg_dvs_evo_open/svo/trace[0m
+[33m[ WARN] [1793628282.627155989]: Cannot find value for parameter: quality_min_fts, assigning default: 50[0m
+[33m[ WARN] [1793628282.627960081]: Cannot find value for parameter: quality_max_drop_fts, assigning default: 40[0m
+[33m[ WARN] [1793628282.628740261]: Cannot find value for parameter: relocalization_max_trials, assigning default: 50[0m
+[33m[ WARN] [1793628282.637255902]: Cannot find value for parameter: structure_optimization_max_pts, assigning default: 20[0m
+[33m[ WARN] [1793628282.641941955]: Cannot find value for parameter: kfselect_min_dist, assigning default: 0.12[0m
+[33m[ WARN] [1793628282.651522528]: Cannot find value for parameter: kfselect_min_num_frames_between_kfs, assigning default: 2[0m
+[33m[ WARN] [1793628282.656077407]: Cannot find value for parameter: img_align_robustification, assigning default: 0[0m
+[33m[ WARN] [1793628282.657260303]: Cannot find value for parameter: img_align_use_distortion_jacobian, assigning default: 0[0m
+[33m[ WARN] [1793628282.667506813]: Cannot find value for parameter: T_world_imuinit/tz, assigning default: 0[0m
+[33m[ WARN] [1793628282.668482676]: Cannot find value for parameter: T_world_imuinit/ty, assigning default: 0[0m
+[33m[ WARN] [1793628282.669474316]: Cannot find value for parameter: T_world_imuinit/tx, assigning default: 0[0m
+[33m[ WARN] [1793628282.676460035]: Cannot find value for parameter: publish_img_pyr_level, assigning default: 0[0m
+[33m[ WARN] [1793628282.677390170]: Cannot find value for parameter: publish_every_nth_img, assigning default: 1[0m
+[33m[ WARN] [1793628282.680931483]: Cannot find value for parameter: publish_world_in_cam_frame, assigning default: 1[0m
+[33m[ WARN] [1793628282.682090455]: Cannot find value for parameter: publish_map_every_frame, assigning default: 0[0m
+[33m[ WARN] [1793628282.683575262]: Cannot find value for parameter: publish_point_display_time, assigning default: 0[0m
+[33m[ WARN] [1793628282.685080830]: Cannot find value for parameter: publish_seeds, assigning default: 1[0m
+[33m[ WARN] [1793628282.686434995]: Cannot find value for parameter: publish_seeds_uncertainty, assigning default: 0[0m
+[33m[ WARN] [1793628282.687368264]: Cannot find value for parameter: trace_pointcloud, assigning default: 0[0m
+[0m[ INFO] [1793628282.567413245]: Found parameter: reprojector_max_n_kfs, value: 5[0m
+[0m[ INFO] [1793628282.569042457]: Found parameter: max_fts, value: 180[0m
+[0m[ INFO] [1793628282.570896222]: Found parameter: grid_size, value: 5[0m
+[0m[ INFO] [1793628282.573726579]: Found parameter: reprojector_affine_est_offset, value: 1[0m
+[0m[ INFO] [1793628282.575371613]: Found parameter: reprojector_affine_est_gain, value: 0[0m
+[0m[ INFO] [1793628282.580705217]: Found parameter: init_min_disparity, value: 25[0m
+[0m[ INFO] [1793628282.587035618]: Found parameter: grid_size, value: 5[0m
+[0m[ INFO] [1793628282.588426724]: Found parameter: n_pyr_levels, value: 2[0m
+[0m[ INFO] [1793628282.589839360]: Found parameter: detector_threshold_primary, value: 8[0m
+[0m[ INFO] [1793628282.591268356]: Found parameter: detector_threshold_secondary, value: 200[0m
+[0m[ INFO] [1793628282.594237471]: Found parameter: n_pyr_levels, value: 2[0m
+[0m[ INFO] [1793628282.598372718]: Found parameter: seed_convergence_sigma2_thresh, value: 100[0m
+[0m[ INFO] [1793628282.601034746]: Found parameter: scan_epi_unit_sphere, value: 0[0m
+[0m[ INFO] [1793628282.602904166]: Found parameter: depth_filter_affine_est_offset, value: 1[0m
+[0m[ INFO] [1793628282.604335362]: Found parameter: depth_filter_affine_est_gain, value: 0[0m
+[0m[ INFO] [1793628282.606062376]: Found parameter: max_fts, value: 180[0m
+[0m[ INFO] [1793628282.608797527]: Found parameter: max_n_kfs, value: 30[0m
+[0m[ INFO] [1793628282.611078585]: Found parameter: use_imu, value: 0[0m
+[0m[ INFO] [1793628282.630984488]: Found parameter: poseoptim_prior_lambda, value: 0[0m
+[0m[ INFO] [1793628282.632988046]: Found parameter: poseoptim_using_unit_sphere, value: 0[0m
+[0m[ INFO] [1793628282.634991462]: Found parameter: img_align_prior_lambda_rot, value: 0[0m
+[0m[ INFO] [1793628282.636804960]: Found parameter: img_align_prior_lambda_trans, value: 0[0m
+[0m[ INFO] [1793628282.639679152]: Found parameter: map_scale, value: 0.6[0m
+[0m[ INFO] [1793628282.641246462]: Found parameter: kfselect_criterion, value: DOWNLOOKING[0m
+[0m[ INFO] [1793628282.644139054]: Found parameter: kfselect_numkfs_upper_thresh, value: 120[0m
+[0m[ INFO] [1793628282.645756817]: Found parameter: kfselect_numkfs_lower_thresh, value: 70[0m
+[0m[ INFO] [1793628282.647588017]: Found parameter: kfselect_min_dist_metric, value: 0.1[0m
+[0m[ INFO] [1793628282.649258319]: Found parameter: kfselect_min_angle, value: 20[0m
+[0m[ INFO] [1793628282.650969654]: Found parameter: kfselect_min_disparity, value: 30[0m
+[0m[ INFO] [1793628282.653843631]: Found parameter: img_align_max_level, value: 3[0m
+[0m[ INFO] [1793628282.655456398]: Found parameter: img_align_min_level, value: 2[0m
+[0m[ INFO] [1793628282.659358358]: Found parameter: img_align_est_illumination_gain, value: 0[0m
+[0m[ INFO] [1793628282.660821996]: Found parameter: img_align_est_illumination_offset, value: 0[0m
+[0m[ INFO] [1793628282.662525295]: Found parameter: poseoptim_thresh, value: 2[0m
+[0m[ INFO] [1793628282.664199494]: Found parameter: update_seeds_with_old_keyframes, value: 1[0m
+[0m[ INFO] [1793628282.666186940]: Found parameter: use_async_reprojectors, value: 0[0m
+[0m[ INFO] [1793628282.666425716]: DepthFilter: created.[0m
+[0m[ INFO] [1793628282.666501621]: DepthFilter: Start thread.[0m
+[0m[ INFO] [1793628282.671437862]: Found parameter: T_world_imuinit/qz, value: 0[0m
+[0m[ INFO] [1793628282.672861245]: Found parameter: T_world_imuinit/qy, value: 0[0m
+[0m[ INFO] [1793628282.674484422]: Found parameter: T_world_imuinit/qx, value: 0[0m
+[0m[ INFO] [1793628282.675942311]: Found parameter: T_world_imuinit/qw, value: 1[0m
+[0m[ INFO] [1793628282.679221252]: Found parameter: publish_every_nth_dense_input, value: 5[0m
+[0m[ INFO] [1793628282.689066289]: Found parameter: publish_marker_scale, value: 0.5[0m
+[0m[ INFO] [1793628282.703348537]: Found parameter: use_imu, value: 0[0m
+[0m[ INFO] [1793628282.705021708]: Found parameter: runlc, value: 0[0m
+[0m[ INFO] [1793628282.705434881]: SvoNode: Started Image lo[33m[ WARN] [1793628282.706150191]: Cannot find value for parameter: remote_key_topic, assigning default: svo/remote_key[0m
+I1102 14:04:43.059304  3062 depth_defocus_node.cpp:63] Focal length of virtual camera: 143.01 pixels
+[33m[ WARN] [1793628283.423558139]: Cannot find value for parameter: weight_scale_translation, assigning default: 0[0m
+[33m[ WARN] [1793628283.427375016]: Cannot find value for parameter: weight_scale_rotation, assigning default: 0[0m
+I1102 14:04:43.438146  3074 tracker.cpp:58] Field of view: 70.8728
+I1102 14:04:43.480950  3094 tracker.cpp:150] Spawned tracking thread.
+I1102 14:04:43.627863  3082 Bootstrapper.cpp:18] Bootstrapper initially idle: 0
+I1102 14:04:43.685300  3082 camera.cpp:21] Distortion type: plumb_bob
+[33m[ WARN] [1793628294.750647782]: Cannot find value for parameter: max_events_frames_saved_to_file, assigning default: 0[0m
+[33m[ WARN] [1793628294.753359863]: Cannot find value for parameter: events_frames_filename_format, assigning default: /media/user/data/example/%06d.bmp[0m
+I1102 14:05:10.538745  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:10.539861  3062 depth_defocus_node.cpp:442] Setting KF at time: 0.000000000
+[33m[ WARN] [1793628310.543848734]: Cannot find value for parameter: skip_batches_for_reset, assigning default: 0[0m
+[33m[ WARN] [1793628310.545025520]: Cannot find value for parameter: max_event_rate, assigning default: 10000000[0m
+I1102 14:05:10.744560  3074 tracker.cpp:233] Received new map: 654 points
+I1102 14:05:10.745184  3074 tracker.cpp:236] Auto-triggering tracking
+I1102 14:05:11.589906  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:11.592557  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:11.592909  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940001.868272019
+I1102 14:05:11.861838  3074 tracker.cpp:233] Received new map: 627 points
+I1102 14:05:11.906090  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:11.908349  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:11.908746  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940001.979314018
+W1102 14:05:12.019280  3094 tracker.cpp:262] Losing track!
+I1102 14:05:12.099898  3074 tracker.cpp:233] Received new map: 641 points
+I1102 14:05:12.239987  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:12.242209  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:12.242660  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940002.119915018
+I1102 14:05:12.425328  3074 tracker.cpp:233] Received new map: 641 points
+I1102 14:05:12.574141  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:12.575953  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:12.576620  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940002.285187018
+I1102 14:05:12.752462  3074 tracker.cpp:233] Received new map: 651 points
+I1102 14:05:12.908285  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:12.911886  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:12.912844  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940002.371213018
+I1102 14:05:13.101384  3074 tracker.cpp:233] Received new map: 677 points
+I1102 14:05:13.238993  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:13.241463  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:13.241910  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940002.565013018
+I1102 14:05:13.422452  3074 tracker.cpp:233] Received new map: 699 points
+I1102 14:05:13.572947  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:13.575475  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:13.576117  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940002.666757018
+I1102 14:05:13.801136  3074 tracker.cpp:233] Received new map: 683 points
+I1102 14:05:13.913812  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:13.932011  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:13.945715  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940002.886159019
+I1102 14:05:14.293119  3074 tracker.cpp:233] Received new map: 776 points
+I1102 14:05:14.574005  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:14.576941  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:14.577687  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940003.373008018
+I1102 14:05:14.808821  3074 tracker.cpp:233] Received new map: 787 points
+I1102 14:05:14.907498  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:14.909782  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:14.910420  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940003.556812018
+I1102 14:05:15.132620  3074 tracker.cpp:233] Received new map: 821 points
+I1102 14:05:15.240247  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:15.242787  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:15.243486  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940003.688556019
+I1102 14:05:15.435703  3074 tracker.cpp:233] Received new map: 814 points
+I1102 14:05:15.573619  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:15.576043  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:15.576764  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940003.893320018
+I1102 14:05:15.828572  3074 tracker.cpp:233] Received new map: 861 points
+I1102 14:05:15.908138  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:15.915055  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:15.915910  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940004.032015019
+I1102 14:05:16.143518  3074 tracker.cpp:233] Received new map: 955 points
+I1102 14:05:16.244589  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:16.248270  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:16.249231  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940004.133334019
+I1102 14:05:16.522760  3074 tracker.cpp:233] Received new map: 862 points
+I1102 14:05:16.573987  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:16.576323  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:16.576975  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940004.337510019
+I1102 14:05:16.821961  3074 tracker.cpp:233] Received new map: 768 points
+I1102 14:05:16.910830  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:16.913827  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:16.914191  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940004.606655018
+I1102 14:05:17.177376  3074 tracker.cpp:233] Received new map: 740 points
+I1102 14:05:17.242522  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:17.245460  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:17.246083  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940004.760812019
+I1102 14:05:17.510691  3074 tracker.cpp:233] Received new map: 705 points
+I1102 14:05:17.574030  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:17.576922  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:17.577340  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940004.923750019
+I1102 14:05:17.825837  3074 tracker.cpp:233] Received new map: 603 points
+I1102 14:05:17.907994  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:17.910995  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:17.911847  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940005.019940019
+I1102 14:05:18.149433  3074 tracker.cpp:233] Received new map: 674 points
+W1102 14:05:18.214285  3094 tracker.cpp:262] Losing track!
+I1102 14:05:18.242610  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:18.245694  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:18.246372  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940005.142732019
+I1102 14:05:18.541103  3074 tracker.cpp:233] Received new map: 789 points
+I1102 14:05:18.577728  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:18.581353  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:18.582130  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940005.409948018
+[0m[ INFO] [1793628282.975985579]: Found parameter: camera_name, value: DAVIS-ijrr[0m
+[0m[ INFO] [1793628282.979427732]: Found parameter: calib_file, value: /catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/parameters/calib/DAVIS-ijrr.yaml[0m
+[0m[ INFO] [1793628282.980412079]: camera calibration URL: file:///catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/parameters/calib/DAVIS-ijrr.yaml[0m
+[0m[ INFO] [1793628283.018711323]: Found parameter: radius_search, value: 0.2[0m
+[0m[ INFO] [1793628283.020950743]: Found parameter: min_num_neighbors, value: 2[0m
+[0m[ INFO] [1793628283.023013728]: Found parameter: median_filter_size, value: 15[0m
+[0m[ INFO] [1793628283.024893042]: Found parameter: dvs_frame_id, value: /dvs_evo[0m
+[0m[ INFO] [1793628283.026521040]: Found parameter: dvs_bootstrap_frame_id, value: /camera_0[0m
+[0m[ INFO] [1793628283.027647521]: Found parameter: world_frame_id, value: /world[0m
+[0m[ INFO] [1793628283.048593879]: Found parameter: events_to_recreate_kf, value: 1000000[0m
+[0m[ INFO] [1793628283.055488258]: Found parameter: fov_virtual_camera_deg, value: 80[0m
+[0m[ INFO] [1793628283.057349088]: Found parameter: virtual_width, value: 240[0m
+[0m[ INFO] [1793628283.059196018]: Found parameter: virtual_height, value: 180[0m
+[0m[ INFO] [1793628283.113778826]: Found parameter: min_depth, value: 0.4[0m
+[0m[ INFO] [1793628283.115901612]: Found parameter: max_depth, value: 5[0m
+[0m[ INFO] [1793628283.117445109]: Found parameter: num_depth_cells, value: 100[0m
+[0m[ INFO] [1793628283.118921944]: Found parameter: adaptive_threshold_kernel_size, value: 5[0m
+[0m[ INFO] [1793628283.120229464]: Found parameter: adaptive_threshold_c, value: 7[0m
+[0m[ INFO] [1793628283.139254076]: Found parameter: auto_trigger, value: 1[0m
+[0m[ INFO] [1793628310.543037477]: Found parameter: skip_batches, value: 0[0m
+[0m[ INFO] [1793628310.547812273]: Found parameter: frame_size, value: 2048[0m
+[0m[ INFO] [1793628310.550234915]: Found parameter: min_batch_size, value: 20000[0m
+[0m[ INFO] [1793628310.720922799]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628310.751745933]: Found parameter: accumulate_local_map_once_every, value: 25[0m
+[0m[ INFO] [1793628310.753539644]: Found parameter: global_point_cloud_skip_first, value: 15[0m
+[0m[ INFO] [1793628311.837563128]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628312.081195816]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628312.407203348]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628312.726153582]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628313.082892835]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628313.401821400]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628313.774422040]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628314.264710502]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628314.786567697]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628315.111451057]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628315.412159242]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628315.797504868]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628316.114168155]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628316.495184903]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628316.796171446]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628317.152362085]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628317.482692397]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628317.799829401]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628318.129674941]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628318.499811811]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628318.843593332]: Found parameter: type_focus_meaI1102 14:05:18.868074  3074 tracker.cpp:233] Received new map: 615 points
+I1102 14:05:18.907960  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:18.911095  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:18.911588  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940005.590740018
+W1102 14:05:19.087285  3094 tracker.cpp:262] Losing track!
+*** Aborted at 1793628319 (unix time) try "date -d @1793628319" if you are using GNU date ***
+PC: @     0x7fc51ab01da8 LKSE3::trackFrame()
+*** SIGFPE (@0x7fc51ab01da8) received by PID 3074 (TID 0x7fc4f96f0700) from PID 447749544; stack trace: ***
+    @     0x7fc51a189f10 (unknown)
+    @     0x7fc51ab01da8 LKSE3::trackFrame()
+    @     0x7fc51ab0bd0a Tracker::estimateTrajectory()
+    @     0x7fc51ab0c48c Tracker::trackingThread()
+    @     0x7fc51a8116df (unknown)
+    @     0x7fc5195fa6db start_thread
+    @     0x7fc51a26c61f clone
+[INFO] [1793628310.743942]: Received map: 654 points
+[INFO] [1793628311.573882]: Sending update, coverage: 22.1736111111 %, map visibility: 96.9418960245 %, baseline/depth: 0.0507269390521
+[INFO] [1793628311.862665]: Received map: 627 points
+[INFO] [1793628311.903969]: Sending update, coverage: 20.2407407407 %, map visibility: 96.4912280702 %, baseline/depth: 0.0165305942971
+[INFO] [1793628312.100612]: Received map: 641 points
+[INFO] [1793628312.237689]: Sending update, coverage: 18.9768518519 %, map visibility: 91.7316692668 %, baseline/depth: 0.0200526054413
+[INFO] [1793628312.426149]: Received map: 641 points
+[INFO] [1793628312.571649]: Sending update, coverage: 17.8425925926 %, map visibility: 88.2995319813 %, baseline/depth: 0.0195365597114
+[INFO] [1793628312.750100]: Received map: 651 points
+[INFO] [1793628312.905409]: Sending update, coverage: 17.6481481481 %, map visibility: 86.1751152074 %, baseline/depth: 0.0156535096492
+[INFO] [1793628313.102270]: Received map: 677 points
+[INFO] [1793628313.237264]: Sending update, coverage: 17.8402777778 %, map visibility: 82.1270310192 %, baseline/depth: 0.0251900076039
+[INFO] [1793628313.423115]: Received map: 699 points
+[INFO] [1793628313.570800]: Sending update, coverage: 17.8981481481 %, map visibility: 78.3977110157 %, baseline/depth: 0.0
+[INFO] [1793628313.802032]: Received map: 683 points
+[INFO] [1793628313.906222]: Sending update, coverage: 18.7037037037 %, map visibility: 77.5988286969 %, baseline/depth: 0.0454501645155
+[INFO] [1793628314.299751]: Received map: 776 points
+[INFO] [1793628314.571444]: Sending update, coverage: 21.9513888889 %, map visibility: 85.4381443299 %, baseline/depth: 0.0762221180287
+[INFO] [1793628314.809950]: Received map: 787 points
+[INFO] [1793628314.904686]: Sending update, coverage: 25.5532407407 %, map visibility: 97.458703939 %, baseline/depth: 0.0162374351759
+[INFO] [1793628315.133650]: Received map: 821 points
+[INFO] [1793628315.238035]: Sending update, coverage: 24.412037037 %, map visibility: 93.0572472594 %, baseline/depth: 0.0250101504635
+[INFO] [1793628315.436495]: Received map: 814 points
+[INFO] [1793628315.571256]: Sending update, coverage: 22.2939814815 %, map visibility: 83.9066339066 %, baseline/depth: 0.0245784304297
+[INFO] [1793628315.830477]: Received map: 861 points
+[INFO] [1793628315.905333]: Sending update, coverage: 19.7407407407 %, map visibility: 65.3890824623 %, baseline/depth: 0.0
+[INFO] [1793628316.144486]: Received map: 955 points
+[INFO] [1793628316.239871]: Sending update, coverage: 18.4236111111 %, map visibility: 55.497382199 %, baseline/depth: 0.0
+[INFO] [1793628316.524197]: Received map: 862 points
+[INFO] [1793628316.571552]: Sending update, coverage: 18.0486111111 %, map visibility: 60.788863109 %, baseline/depth: 0.0179110934336
+[INFO] [1793628316.823221]: Received map: 768 points
+[INFO] [1793628316.907798]: Sending update, coverage: 22.3773148148 %, map visibility: 85.8072916667 %, baseline/depth: 0.0364767758886
+[INFO] [1793628317.178460]: Received map: 740 points
+[INFO] [1793628317.238860]: Sending update, coverage: 21.8819444444 %, map visibility: 85.0 %, baseline/depth: 0.0159232797705
+[INFO] [1793628317.511569]: Received map: 705 points
+[INFO] [1793628317.571598]: Sending update, coverage: 20.5416666667 %, map visibility: 82.5531914894 %, baseline/depth: 0.0282412697876
+[INFO] [1793628317.826428]: Received map: 603 points
+[INFO] [1793628317.904654]: Sending update, coverage: 18.8726851852 %, map visibility: 87.728026534 %, baseline/depth: 0.0
+[INFO] [1793628318.151290]: Received map: 674 points
+[INFO] [1793628318.239211]: Sending update, coverage: 22.5115740741 %, map visibility: 99.5548961424 %, baseline/depth: 0.116458489472
+[INFO] [1793628318.542386]: Received map: 789 points
+[INFO] [1793628318.573984]: Sending update, coverage: 18.3564814815 %, map visibility: 93.536121673 %, baseline/depth: 0.150414404206
+[INFO] [1793628318.870084]: Received map: 615 points
+[INFO] [1793628318.905407]: Sending update, coverage: 11.5462962963 %, map visibility: 91.7073170732 %, baseline/depth: 0.11624411222
+[INFOI1102 14:05:19.243093  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:19.247798  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:19.248605  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940005.633107019
+I1102 14:05:19.573643  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:19.576484  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:19.577081  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940005.633107019
+I1102 14:05:19.905637  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:19.908113  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:19.908543  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940005.633107019
+I1102 14:05:20.239902  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:20.242316  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:20.242789  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940005.633107019
+[31m================================================================================REQUIRED process [dvs_tracking-6] has died!
+process has died [pid 3074, exit code -8, cmd /catkin_ws/devel/lib/dvs_tracking/dvs_tracking_ros events:=/dvs/events remote_key:=/evo/remote_key pointcloud:=dvs_mapping/pointcloud __name:=dvs_tracking __log:=/root/.ros/log/5918dd98-d6c6-11f1-b8c4-62475130aabd/dvs_tracking-6.log].
+log file: /root/.ros/log/5918dd98-d6c6-11f1-b8c4-62475130aabd/dvs_tracking-6*.log
+Initiating shutdown!
+================================================================================[0m
+I1102 14:05:20.915011  3062 depth_defocus_node.cpp:205] Received command: update
+I1102 14:05:20.921235  3062 depth_defocus_node.cpp:441] Received a map creation request
+I1102 14:05:20.922762  3062 depth_defocus_node.cpp:442] Setting KF at time: 1468940005.633107019
+] [1793628319.173076]: Received map: 341 points
+[INFO] [1793628319.240261]: Sending update, coverage: 4.53472222222 %, map visibility: 14.9560117302 %, baseline/depth: 0.0
+[INFO] [1793628319.541055]: Received map: 261 points
+[INFO] [1793628319.570277]: Sending update, coverage: 6.20601851852 %, map visibility: 36.0153256705 %, baseline/depth: 0.0
+[INFO] [1793628319.845718]: Received map: 261 points
+[INFO] [1793628319.903097]: Sending update, coverage: 6.20601851852 %, map visibility: 36.0153256705 %, baseline/depth: 0.0
+[INFO] [1793628320.202812]: Received map: 261 points
+[INFO] [1793628320.236395]: Sending update, coverage: 6.20601851852 %, map visibility: 36.0153256705 %, baseline/depth: 0.0
+[INFO] [1793628320.579571]: Received map: 261 points
+[INFO] [1793628320.907417]: Sending update, coverage: 6.20601851852 %, map visibility: 36.0153256705 %, baseline/depth: 0.0
+[0m[ INFO] [1793628283.625548583]: Found parameter: auto_trigger, value: 1[0m
+[0m[ INFO] [1793628283.631695605]: Found parameter: camera_name, value: DAVIS-ijrr[0m
+[0m[ INFO] [1793628283.633387375]: Found parameter: calib_file, value: /catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/parameters/calib/DAVIS-ijrr.yaml[0m
+[0m[ INFO] [1793628283.634189911]: camera calibration URL: file:///catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/parameters/calib/DAVIS-ijrr.yaml[0m
+[0m[ INFO] [1793628283.648799427]: Found parameter: world_frame_id, value: /world[0m
+[0m[ INFO] [1793628283.650651160]: Found parameter: dvs_bootstrap_frame_id, value: /camera_0[0m
+[0m[ INFO] [1793628283.678638714]: Found parameter: unwarp_estimate_n_it, value: 75[0m
+[0m[ INFO] [1793628283.680499762]: Found parameter: unwarp_estimate_eps, value: 0.0001[0m
+[0m[ INFO] [1793628283.682814634]: Found parameter: unwarp_estimate_pyramid_lvls, value: 2[0m
+[0m[ INFO] [1793628283.691650240]: Found parameter: rate_hz, value: 30[0m
+[0m[ INFO] [1793628283.692770950]: Found parameter: frame_size, value: 15000[0m
+[0m[ INFO] [1793628283.694756330]: Found parameter: local_frame_size, value: 5000[0m
+[0m[ INFO] [1793628283.696987808]: Found parameter: enable_visualizations, value: 1[0m
+[0m[ INFO] [1793628283.699373310]: Found parameter: motion_corrected_topic, value: /events/image_raw[0m
+[0m[ INFO] [1793628283.704177632]: Found parameter: optical_flow_topic, value: /evo/bootstrap/optical_flow[0m
+[0m[ INFO] [1793628283.743309235]: Found parameter: min_step_size, value: 15000[0m
+[0m[ INFO] [1793628283.751847976]: Found parameter: events_scale_factor, value: 4[0m
+[0m[ INFO] [1793628283.754670545]: Found parameter: activation_threshold_min, value: 10[0m
+[0m[ INFO] [1793628283.756792959]: Found parameter: activation_threshold_patch_size, value: 13[0m
+[0m[ INFO] [1793628283.759154327]: Found parameter: median_filter_size, value: 1[0m
+[0m[ INFO] [1793628283.762139355]: Found parameter: median_filtering, value: 0[0m
+[0m[ INFO] [1793628283.764262471]: Found parameter: adaptive_thresholding, value: 1[0m
+sure, value: 0[0m
+[0m[ INFO] [1793628319.139949301]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628319.508921407]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628319.825563946]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628320.178619728]: Found parameter: type_focus_measure, value: 0[0m
+[0m[ INFO] [1793628320.554561762]: Found parameter: type_focus_measure, value: 0[0m
+op.[0m
+[0m[ INFO] [1793628282.713013544]: Found parameter: cam0_topic, value: /dvs/image_raw[0m
+[0m[ INFO] [1793628293.691774520]: DepthFilter: RESET.[0m
+[0m[ INFO] [1793628295.634224032]: Init: Triangulated 122 points[0m
+optim_prior_lambda: 0.0
+ * /svo/poseoptim_thresh: 2.0
+ * /svo/poseoptim_using_unit_sphere: False
+ * /svo/publish_every_nth_dense_input: 5
+ * /svo/publish_marker_scale: 0.5
+ * /svo/reprojector_affine_est_gain: False
+ * /svo/reprojector_affine_est_offset: True
+ * /svo/reprojector_max_n_kfs: 5
+ * /svo/runlc: False
+ * /svo/scan_epi_unit_sphere: False
+ * /svo/seed_convergence_sigma2_thresh: 100
+ * /svo/update_seeds_with_old_keyframes: True
+ * /svo/use_async_reprojectors: False
+ * /svo/use_imu: False
+ * /tf_to_camera_marker/marker_scale: 0.2
+ * /trigger_map_expansion/baseline_threshold: 0.1
+ * /trigger_map_expansion/coverage_threshold: 0.4
+ * /trigger_map_expansion/number_of_initial_maps_to_skip: 0
+ * /trigger_map_expansion/rate: 3
+ * /trigger_map_expansion/visibility_threshold: 0.9
+ * /virtual_height: 180
+ * /virtual_width: 240
+ * /world_frame_id: /world
+
+NODES
+  /
+    dvs_bootstrapping (dvs_bootstrapping/dvs_bootstrapping_ef_ros)
+    dvs_mapping (dvs_mapping/dvs_mapping_ros)
+    dvs_tracking (dvs_tracking/dvs_tracking_ros)
+    pose_to_tf (dvs_bootstrapping/pose_to_tf.py)
+    snakify (evo_utils/snakify.py)
+    svo (svo_ros/svo_node)
+    tf_to_camera_marker (evo_utils/tf_to_camera_markers.py)
+    trigger_map_expansion (dvs_mapping/trigger_map_expansion.py)
+
+auto-starting new master
+[1mprocess[master]: started with pid [3036][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/catkin_ws/src/rpg_dvs_evo_open/dvs_tracking/launch/flyingroom_headless.launch http://localhost:11311
+[1msetting /run_id to 5918dd98-d6c6-11f1-b8c4-62475130aabd[0m
+[1mprocess[rosout-1]: started with pid [3047][0m
+started core service [/rosout]
+[1mprocess[svo-2]: started with pid [3055][0m
+[1mprocess[pose_to_tf-3]: started with pid [3056][0m
+[1mprocess[dvs_mapping-4]: started with pid [3062][0m
+[1mprocess[trigger_map_expansion-5]: started with pid [3068][0m
+[1mprocess[dvs_tracking-6]: started with pid [3074][0m
+[1mprocess[dvs_bootstrapping-7]: started with pid [3082][0m
+[1mprocess[tf_to_camera_marker-8]: started with pid [3095][0m
+[1mprocess[snakify-9]: started with pid [3106][0m
+[snakify-9] killing on exit
+[tf_to_camera_marker-8] killing on exit
+[dvs_bootstrapping-7] killing on exit
+[dvs_tracking-6] killing on exit
+[dvs_mapping-4] killing on exit
+[trigger_map_expansion-5] killing on exit
+[pose_to_tf-3] killing on exit
+[svo-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

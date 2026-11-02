@@ -1,0 +1,181 @@
+[0m[INFO] [1793630010.737147199]: init begins[0m
+[0m[INFO] [1793630010.748956897]: Loaded config_file: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/esvio.yaml[0m
+result path /tmp/esvio_result/esvio_result_no_loop.csv
+[33m[WARN] [1793630010.754608384]:  Optimize extrinsic param around initial guess![0m
+[0m[INFO] [1793630010.754463418]: ROW_Image: 260.000000 COL_Image: 346.000000 [0m
+[0m[INFO] [1793630010.754578102]: ROW_Event: 260.000000 COL_EVENT: 346.000000 [0m
+[0m[INFO] [1793630010.755465406]: give an T to the extrinsic of cam [0m
+[0m[INFO] [1793630010.755553628]: give an T to the extrinsic of event [0m
+[0m[INFO] [1793630010.755695046]: Extrinsic_R : 
+   0.999877   0.0150817  0.00426006
+ -0.0151284    0.999823   0.0111549
+-0.00409108   -0.011218    0.999929[0m
+[0m[INFO] [1793630010.755794208]: Extrinsic_T : 
+0.00286126 0.00180892  0.0177984[0m
+[0m[INFO] [1793630010.755908514]: Extrinsic_R_event : 
+   0.999877   0.0150817  0.00426006
+ -0.0151284    0.999823   0.0111549
+-0.00409108   -0.011218    0.999929[0m
+[0m[INFO] [1793630010.756008843]: Extrinsic_T_event : 
+0.00286126 0.00180892  0.0177984[0m
+[0m[INFO] [1793630010.761142043]: parameters.cpp: gravity_norm: 1.000000[0m
+parameters.cpp: Not use sampson model
+parameters.cpp: Yes use geometric correction
+[33m[WARN] [1793630010.766187343]: waiting for event, image and imu...[0m
+[33m[WARN] [1793630010.802756511]: into event point feature detection and tracking[0m
+[33m[WARN] [1793630010.845903893]: into stereo image feature detection and tracking[0m
+vocabulary_file/catkin_ws/src/ESVIO/pose_graph/support_files/brief_k10L6.bin
+loop start load vocabulary
+BRIEF_PATTERN_FILE/catkin_ws/src/ESVIO/pose_graph/support_files/brief_pattern.yml
+Failed to create folder  
+[0m[INFO] [1793630010.815952385]: Loaded config_file: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/esvio.yaml[0m
+[0m[INFO] [1793630010.823451216]: Loaded esvio_folder: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/[0m
+[0m[INFO] [1793630010.823716873]: Rrl_event: 
+   0.999929   0.0110881 -0.00446785
+ -0.0110428    0.999889   0.0100295
+ 0.00457856 -0.00997948     0.99994[0m
+[0m[INFO] [1793630010.823831196]: Trl_event: 
+  -0.0998814 -0.000392707  1.88801e-06[0m
+[0m[INFO] [1793630010.823883193]: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying//event0_esvio.yaml[0m
+[0m[INFO] [1793630010.833141651]: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying//event1_esvio.yaml[0m
+226.018       0     173
+      0 225.787     130
+      0       0       1
+[0m[INFO] [1793630010.762874122]: Extrinsic_R2 : 
+   0.999946  0.00262837   0.0100576
+-0.00265805    0.999992  0.00293933
+ -0.0100498  -0.0029659    0.999945[0m
+[0m[INFO] [1793630010.762964201]: Extrinsic_T2 : 
+  0.100703 0.00193472  0.0167828[0m
+[0m[INFO] [1793630010.763021417]: Rrl: 
+   0.999929   0.0110881 -0.00446785
+ -0.0110428    0.999889   0.0100295
+ 0.00457856 -0.00997948     0.99994[0m
+[0m[INFO] [1793630010.763083594]: Trl: 
+  -0.0998814 -0.000392707  1.88801e-06[0m
+[0m[INFO] [1793630010.764109311]: Loaded esvio_folder: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/[0m
+[0m[INFO] [1793630010.764317952]: Extrinsic_R2_event : 
+   0.999946  0.00262837   0.0100576
+-0.00265805    0.999992  0.00293933
+ -0.0100498  -0.0029659    0.999945[0m
+[0m[INFO] [1793630010.764377817]: Extrinsic_T2_event : 
+  0.100703 0.00193472  0.0167828[0m
+[0m[INFO] [1793630010.764411904]: Rrl_event: 
+   0.999929   0.0110881 -0.00446785
+ -0.0110428    0.999889   0.0100295
+ 0.00457856 -0.00997948     0.99994[0m
+[0m[INFO] [1793630010.764452953]: Trl_event: 
+  -0.0998814 -0.000392707  1.88801e-06[0m
+[0m[INFO] [1793630010.765264673]: Loaded esvio_folder: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/[0m
+[0m[INFO] [1793630010.765385637]: Unsynchronized sensors, online estimate time offset, initial td: 0[0m
+[0m[INFO] [1793630010.765421230]: estimator.cpp: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/cam0_esvio.yaml[0m
+[0m[INFO] [1793630010.765766022]: estimator.cpp: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/cam1_esvio.yaml[0m
+[0m[INFO] [1793630010.765925591]: estimator.cpp: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/event0_esvio.yaml[0m
+[0m[INFO] [1793630010.766054116]: estimator.cpp: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/event1_esvio.yaml[0m
+[0m[INFO] [1793630022.066236890]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630022.066343525]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630022.578135363]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630022.578451610]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630022.578493397]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630022.578588557]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630023.086716903]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630023.088321136]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630023.088448614]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630023.088593740]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630023.714603164]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630023.715072469]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630023.715117159]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630023.715182747]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630024.224145213]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630024.224250816]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630024.745814461]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630024.746874552]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630024.746947732]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630024.747026503]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630025.247863858]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630025.248653507]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630025.248756519]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630025.248865577]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630025.768382745]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630025.769632632]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630025.769681454]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630025.769741565]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630026.411003916]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630026.411340110]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630026.901836008]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630026.902038847]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630026.902112166]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630026.902166975]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630027.408404137]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630027.408606174]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630027.408650615]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630027.408718460]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630027.930364999]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630027.930921488]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630027.930960775]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630027.931067215]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630028.577838572]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630028.578029336]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630028.578082299]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630028.578155452]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630029.083090987]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630029.083492289]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630029.083547025]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630029.083674166]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630029.587607186]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630029.587827772]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630029.587857555]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630029.587953953]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630030.092268489]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630030.092411728]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630030.092434025]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630030.092532341]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630030.613433836]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630030.613635743]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630030.613680628]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630030.613749767]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630031.237055307]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630031.237330765]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630031.237386769]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630031.237486198]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630031.748814159]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1793630031.749084804]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630031.749159772]: evio IMU excitation not enough![0m
+[0m[INFO] [1793630031.749251819]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630032.262573056]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1793630032.262724910]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [17936300[33m[WARN] [1793630032.898346464]: gyroscope bias initial calibration -0.0112104 -0.0175392 -0.0138232[0m
+[33m[WARN] [1793630032.925726199]: estimated scale: 0.012981[0m
+[33m[WARN] [1793630032.926512460]:  result g     8.83967 0.614631 -8.54119  -2.1932[0m
+[33m[WARN] [1793630032.929133059]:  refine     9.80766 0.770969 -9.37986 -2.75934[0m
+[33m[WARN] [1793630032.930037759]: estimated scale after RefineGravity: -0.274919[0m
+[33m[WARN] [1793630033.691202795]: gyroscope bias initial calibration -0.00614192  0.00422671 -0.00611922[0m
+[33m[WARN] [1793630033.716962404]: estimated scale: 0.038789[0m
+[33m[WARN] [1793630033.717518614]:  result g     8.84389 0.640682  -8.5394 -2.20966[0m
+[33m[WARN] [1793630033.719393449]:  refine     9.80766 0.745638 -9.35654 -2.84417[0m
+[33m[WARN] [1793630033.719830699]: estimated scale after RefineGravity: -0.212452[0m
+[33m[WARN] [1793630034.185854270]: gyroscope bias initial calibration   -0.0088748  0.000519949 -0.000774725[0m
+[33m[WARN] [1793630034.219247057]: estimated scale: 0.077717[0m
+[33m[WARN] [1793630034.219973672]:  result g     8.84931 0.639112 -8.54165 -2.22306[0m
+[33m[WARN] [1793630034.222372021]:  refine     9.80766 0.695608 -9.34482 -2.89494[0m
+[33m[WARN] [1793630034.223122461]: estimated scale after RefineGravity: -0.216823[0m
+[33m[WARN] [1793630034.710404415]: gyroscope bias initial calibration  -0.0168046  0.00160173 -0.00117825[0m
+[33m[WARN] [1793630034.744056813]: estimated scale: 0.127148[0m
+[33m[WARN] [1793630034.744964340]:  result g     8.85974 0.632421 -8.54222 -2.26395[0m
+[33m[WARN] [1793630034.748510368]:  refine     9.80766 0.673719 -9.32003 -2.97881[0m
+[33m[WARN] [1793630034.749309422]: estimated scale after RefineGravity: -0.197077[0m
+[33m[WARN] [1793630035.543147261]: ---------------5points----------------[0m
+[33m[WARN] [1793630035.546155088]: input points 94 2D inliers 3D inliers 20[0m
+[33m[WARN] [1793630035.672974199]: gyroscope bias initial calibration  0.0851891 -0.0178933  0.0111109[0m
+[33m[WARN] [1793630035.835982378]: gyroscope bias initial calibration  -0.196766  0.0288007 0.00817307[0m
+[33m[WARN] [1793630035.844241819]: estimated scale: 0.090478[0m
+[33m[WARN] [1793630035.845019729]:  result g     9.25691 0.712701 -8.98533 -2.10862[0m
+[33m[WARN] [1793630035.846439205]:  refine     9.80766 0.584447 -8.97283 -3.91624[0m
+[33m[WARN] [1793630035.847159667]: estimated scale after RefineGravity: -0.059898[0m
+[33m[WARN] [1793630036.160621670]: ---------------5points----------------[0m
+[33m[WARN] [1793630036.162606762]: input points 102 2D inliers 3D inliers 19[0m
+[33m[WARN] [1793630036.233911113]: gyroscope bias initial calibration   0.129929 0.00854581 -0.0709578[0m
+terminate called without an active exception
+terminate called without an active exception
+terminate called without an active exception
+terminate called without an active exception

@@ -1,0 +1,2 @@
+evo_flyingroom_run1 | rate 0.7x | bootstrap frames | wall 149.6 s (start 1793627464.784186118, end 1793627614.373724860) | poses 3112 | node crashes during run 0 | Samples: 1212  Mean CPU (% of one core): 727.1  Peak memory: 832 MB  Logged for 155.2 s
+shapes_6dof_run1 | rate 0.5x | bootstrap frames | wall 121.2 s (start 1793627677.614844570, end 1793627798.856353653) | poses 31 | node crashes during run 1 | Samples: 1222  Mean CPU (% of one core): 295.8  Peak memory: 715 MB  Logged for 127.0 s

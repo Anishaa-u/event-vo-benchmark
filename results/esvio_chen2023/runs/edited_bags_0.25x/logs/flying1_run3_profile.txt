@@ -1,0 +1,3 @@
+Profiling processes matching ['stereo_event_tracker', 'stereo_image_tracker', 'stereo_esvio_estimator', 'pose_graph/pose_graph']
+Samples: 879  Mean CPU (% of one core): 355.2  Peak memory: 663 MB  Logged for 113.2 s
+Saved /work/runs/flying1_run3_profile.csv

@@ -1,0 +1,66 @@
+EVO (Rebecq et al., 2017) - experiment notes
+=============================================
+Hardware: same machine as ESVO and ESVIO (Intel Core i7-1255U, 10 cores / 12 threads, 15.7 GB RAM,
+Windows 11, Docker Desktop 4.97 on WSL 2). Runs made with the default WSL 2 memory (~7.7 GB),
+the same as ESVO.
+
+Algorithm
+  EVO of Rebecq, Horstschaefer, Gallego & Scaramuzza (2017), IEEE RA-L, doi:10.1109/LRA.2016.2645143
+  Code: uzh-rpg/rpg_dvs_evo_open, commit 14c72916b40c2d5fbd7197b772198c3ca75f4cbe
+  Container: osrf/ros:melodic-desktop (Ubuntu 18.04, ROS Melodic), as the README specifies
+
+Data (RPG Event Camera Dataset, Mueggler et al., 2017; monocular DAVIS240C, 240 x 180)
+  shapes_6dof.bag  322 MB, 59.7 s, ground truth /optitrack/davis 11,862 poses
+  boxes_6dof.bag   1.6 GB, 59.8 s, ground truth /optitrack/davis 11,954 poses
+  evo_flyingroom.bag 564 MB, 103 s, EVO's own sample bag (functional check, no ground truth)
+  Source: https://rpg.ifi.uzh.ch/datasets/davis/ and http://rpg.ifi.uzh.ch/data/EVO/code_examples/
+
+Build changes (none affect the algorithm)
+  1. dependencies.yaml uses SSH git URLs; switched to HTTPS (no GitHub key in the container).
+  2. zurich-eye/gflags_catkin clones a gflags branch ('master') that no longer exists; replaced
+     gflags_catkin and glog_catkin with the ethz-asl versions (the ones ESVO uses). First build failed.
+  3. dvs_tracking declares dvs_ros_driver and davis_ros_driver (live-camera drivers) in package.xml
+     but never uses them in code; the two <depend> lines were removed. Second build failed on this.
+     Live drivers marked CATKIN_IGNORE (need libcaer, not used for bag playback).
+  4. A Docker build crashed when EVO and ESVIO were compiled at the same time (out of memory).
+     Builds were then run one at a time with WSL memory raised to 11 GB + 8 GB swap for building
+     only; the setting was removed again before any run.
+
+Configuration
+  rpg_headless.launch = EVO's live.launch (its template for the DAVIS-ijrr camera of the RPG dataset,
+    calibration parameters/calib/DAVIS-ijrr.yaml) without svo_gui, rqt_evo, rviz, dvs_renderer and
+    dvs_reconstruction (visualisation and image reconstruction only; tracking/mapping unchanged)
+  flyingroom_headless.launch = flyingroom.launch with the same nodes removed
+  auto_trigger:=true (pipeline starts itself; no GUI button presses)
+  Trajectory: /evo/pose (geometry_msgs/PoseStamped). First recorded with rosbag record (left unclosed
+    when runs ended); replaced by record_pose.py, which writes TUM directly (see below)
+  Evaluation: Sim(3) alignment (monocular, requirement R4)
+
+Configuration actually used for the main runs (decided by pilots, below)
+  flyingroom_headless.launch with camera_name:=DAVIS-ijrr (RPG dataset calibration) and
+  bootstrap_image_topic:=/dvs/image_raw (SVO bootstrap from the DAVIS frames, which the EVO README calls
+  the most reliable method). flyingroom.launch is the authors' configuration for bag playback; its
+  tracker guards are min_map_size 200, min_n_keypoints 2000.
+  Playback 0.5x (EVO README suggests slowing on weaker hardware; Chen et al. used 0.2 or 0.5x).
+  Pose recording: record_pose.py writes /evo/pose to TUM, flushing each line (kept even if EVO crashes).
+
+Pilots and functional check (kept in runs/pilots/)
+  evo_flyingroom (EVO's own sample bag), flyingroom config, event-frame bootstrap (default), 0.7x:
+    SVO "SparseImgAlign: no features to track", 0 poses; dvs_tracking died (exit -8, SIGFPE).
+  evo_flyingroom, flyingroom config, frame bootstrap, 0.7x: WORKED. 3,112 poses over the 99 s bag,
+    no crash, mean CPU 727% of one core, peak memory 832 MB. -> EVO itself functions in this container.
+  shapes_6dof, live.launch (DAVIS-ijrr template, guards 0/0), frame bootstrap: dvs_tracking died (SIGFPE).
+  shapes_6dof, live.launch with guards 200/2000, frame bootstrap, 0.5x: 31 poses, dvs_tracking died (SIGFPE).
+  shapes_6dof and boxes_6dof, flyingroom config + DAVIS-ijrr, frame bootstrap, 0.5x: 96 and 366 poses,
+    dvs_tracking died (SIGFPE) in both.
+
+Main runs (0.5x, 3 per sequence): dvs_tracking crashed (SIGFPE, exit -8) in every one of the 6 runs.
+  Coverage 6.5-14.0%; Sim(3) scale 0.03-0.30 and RPE 79-98% show the short tracked segments did not
+  follow the true motion, so the Sim(3) ATE of the partial runs (0.19-0.35 m) is not meaningful.
+  All six recorded as failures (R5). See runs/run_log.txt, results.csv.
+shapes_6dof_run1 | rate 0.5x | bootstrap frames | wall 120.7 s | poses 178 | node crashes during run 1 | Samples: 1218  Mean CPU (% of one core): 375.3  Peak memory: 749 MB  Logged for 126.5 s
+shapes_6dof_run2 | rate 0.5x | bootstrap frames | wall 120.5 s | poses 66 | node crashes during run 1 | Samples: 1234  Mean CPU (% of one core): 294.6  Peak memory: 710 MB  Logged for 126.3 s
+shapes_6dof_run3 | rate 0.5x | bootstrap frames | wall 120.6 s | poses 86 | node crashes during run 1 | Samples: 1224  Mean CPU (% of one core): 264.9  Peak memory: 715 MB  Logged for 126.4 s
+boxes_6dof_run1 | rate 0.5x | bootstrap frames | wall 122.5 s | poses 296 | node crashes during run 1 | Samples: 1229  Mean CPU (% of one core): 497.3  Peak memory: 831 MB  Logged for 128.2 s
+boxes_6dof_run2 | rate 0.5x | bootstrap frames | wall 120.7 s | poses 326 | node crashes during run 1 | Samples: 1229  Mean CPU (% of one core): 475.6  Peak memory: 810 MB  Logged for 126.5 s
+boxes_6dof_run3 | rate 0.5x | bootstrap frames | wall 120.9 s | poses 596 | node crashes during run 1 | Samples: 1225  Mean CPU (% of one core): 566.1  Peak memory: 830 MB  Logged for 126.7 s

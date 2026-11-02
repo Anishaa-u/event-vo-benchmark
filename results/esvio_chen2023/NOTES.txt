@@ -1,0 +1,74 @@
+ESVIO (Chen et al., 2023) - experiment notes
+=============================================
+Hardware: same machine as ESVO and EVO (Intel Core i7-1255U, 10 cores / 12 threads, 15.7 GB RAM,
+Windows 11, Docker Desktop 4.97 on WSL 2). Runs made with the default WSL 2 memory (~7.7 GB),
+the same as ESVO.
+
+Algorithm
+  ESVIO of Chen, Guan & Lu (2023), IEEE RA-L, doi:10.1109/LRA.2023.3269950 (arclab-hku/ESVIO)
+  Not the ESVIO of Liu et al. (2023a, Sensors), which has no buildable public code.
+  Commit: b9e5aee7db647b70cee6f1128e2f49f47107ca84
+  Container: osrf/ros:noetic-desktop (Ubuntu 20.04, ROS Noetic), as the README specifies
+
+Data: the same ESVO-edited MVSEC bags as ESVO (indoor_flying1_edited.bag, indoor_flying3_edited.bag),
+  with stereo events, stereo frames and IMU (/davis/left/imu). Ground truth /davis/left/pose
+  (same gt_flying1.txt / gt_flying3.txt files as ESVO).
+
+Build changes (none affect the algorithm)
+  1. Added libceres-dev (Ceres 1.14.0 on Ubuntu 20.04, the version the README requires). First build
+     failed: camera_model could not find Ceres.
+  2. Build camera_model before the other packages. Second build failed: esvio_estimator,
+     feature_tracker and pose_graph use camera_model but do not declare it in package.xml, so
+     catkin configured them first.
+  3. Live-camera driver packages in dependences/rpg_dvs_ros marked CATKIN_IGNORE (need camera SDKs,
+     not used for bag playback).
+  4. A Docker build crashed when EVO and ESVIO were compiled at the same time (out of memory).
+     Builds were then run one at a time with WSL memory raised to 11 GB + 8 GB swap for building
+     only; the setting was removed again before any run.
+
+Configuration (config/esvio_mvsec_flying/esvio.yaml and esvio_mvsec_flying.launch, shipped by the
+authors for these sequences; everything else unchanged)
+  output_path: /home/cpy/Datasets/output -> /tmp/esvio_result (container path)
+  esvio_mvsec_flying_headless.launch = esvio_mvsec_flying.launch without rviz and without the
+    gnome-terminal launch prefix on stereo_image_tracker (no display in the container)
+  Trajectory evaluated: esvio_result_no_loop.csv (sliding-window odometry, no loop closure), converted
+    to TUM by esvio_csv_to_tum.py (time ns -> s, quaternion reordered). Loop-closed output kept in
+    runs/loop/ for reference. Odometry is used because EVO and ESVO have no loop closure.
+  Estimated pose is the IMU/body frame; ground truth is the left camera. The extrinsic translation is
+    ~1.8 cm, so after SE(3) alignment the lever-arm effect is at most a few millimetres.
+
+Pilots and run conditions (all on indoor_flying1, kept in runs/)
+  Edited bag, 1.0x (pilot_1.0x): ran in real time (27.3 s wall) at 4.6 cores, but the estimator diverged
+    from the first second: ATE 268 m, Sim(3) scale 0.003, 370 poses.
+  Edited bag, 0.5x (pilot_0.5x): ATE 0.305 m, coverage 91.9%, scale 1.104, 356 poses, 3.6 cores.
+  Edited bags, 0.25x, 3 runs per sequence (edited_bags_0.25x/): flying1 ATE 0.20, 0.49, 2.10 m
+    (coverage 95.3, 83.7, 83.7%; scale 1.02, 1.06, 0.34); flying3 diverged in all 3 runs
+    (ATE 38.5, 63.4, 30.9 m; scale ~0.005). Logs show the initialisation estimating a negative or
+    near-zero scale ("estimated scale: -0.0028"). Cause: the ESVO-edited bags start mid-flight
+    (ground truth speed 0.5-0.6 m/s in the first 2 s), while VINS-style initialisation expects a start
+    at rest or well-excited motion.
+  Bag read check: Windows-mounted folder 10.9 MB/s uncached, container disk 134 MB/s; 1x rosbag play of
+    the 26 s bag took 31-35 s from either, so playback was not I/O limited. All ESVIO and EVO runs play
+    from the container disk.
+
+Main runs: ORIGINAL MVSEC data bags (indoor_flying1_data.bag 1.28 GB, 70 s; indoor_flying3_data.bag
+  1.85 GB, 94 s; https://visiondata.cis.upenn.edu/mvsec/indoor_flying/), which start ~10 s before the
+  edited bags with the drone at rest. Same configuration, 0.25x (matched to ESVO), 3 runs per sequence.
+  Scored over exactly the ESVO window (the edited bags' ground truth, gt_flying1/3.txt), SE(3).
+  flying1: ATE 0.184, 0.193, 0.184 m; coverage 100% x3; RPE 14.7-14.9%; scale 1.07-1.09.
+  flying3: ATE 0.275, 0.226, 0.290 m; coverage 100, 96.9, 100%; RPE 23.3-24.1%; scale 1.01-1.06.
+  Beyond the window: flying1 all 3 runs output poses from 4.4 s to the end (70.2 s), 980 poses each.
+  flying3 run 1 output to the end (1,289 poses); run 2 stopped producing poses at 44.4 s of 94 s
+  (492 poses); run 3 output to 93.6 s but with gaps (635 poses). No node crashes or respawns.
+flying1_run1 | rate 0.25x | wall 282.9 s | poses 980 | respawns 0 | Samples: 2691  Mean CPU (% of one core): 146.5  Peak memory: 759 MB  Logged for 287.8 s
+flying1_run2 | rate 0.25x | wall 282.7 s | poses 980 | respawns 0 | Samples: 2711  Mean CPU (% of one core): 127.3  Peak memory: 761 MB  Logged for 287.5 s
+flying1_run3 | rate 0.25x | wall 282.7 s | poses 980 | respawns 0 | Samples: 2696  Mean CPU (% of one core): 132.0  Peak memory: 764 MB  Logged for 287.5 s
+flying3_run1 | rate 0.25x | wall 379.1 s | poses 1289 | respawns 0 | Samples: 3557  Mean CPU (% of one core): 147.9  Peak memory: 870 MB  Logged for 384.0 s
+flying3_run2 | rate 0.25x | wall 401.2 s | poses 492 | respawns 0 | Samples: 998  Mean CPU (% of one core): 232.6  Peak memory: 900 MB  Logged for 406.0 s
+flying3_run3 | rate 0.25x | wall 401.2 s | poses 635 | respawns 0 | Samples: 1491  Mean CPU (% of one core): 159.5  Peak memory: 852 MB  Logged for 406.1 s
+
+Real-time check on the ORIGINAL bag (indoor_flying1, one run each, runs/pilot_orig_1.0x and _0.5x)
+  1.0x: wall 72.7 s for the 70 s bag, 4.5 cores, 790 MB, 871 poses, ATE 0.184 m, coverage 100%, RPE 15.2%
+  0.5x: wall 141.8 s, 2.7 cores, 766 MB, 980 poses, ATE 0.184 m, coverage 100%, RPE 14.4%
+  -> ESVIO runs in real time on this laptop with the same accuracy as at 0.25x. The 1.0x divergence on
+     the edited bag was caused by the mid-flight start, not by CPU starvation.

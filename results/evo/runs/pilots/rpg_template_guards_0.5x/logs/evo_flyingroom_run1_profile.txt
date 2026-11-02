@@ -1,0 +1,3 @@
+Profiling processes matching ['svo_node', 'dvs_mapping', 'dvs_tracking', 'dvs_bootstrapping', 'trigger_map_expansion', 'pose_to_tf']
+Samples: 1212  Mean CPU (% of one core): 727.1  Peak memory: 832 MB  Logged for 155.2 s
+Saved /work/test/evo_flyingroom_run1_profile.csv

@@ -1,0 +1,62 @@
+[0m[INFO] [1793623434.408684205]: init begins[0m
+[0m[INFO] [1793623434.422046662]: Loaded config_file: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/esvio.yaml[0m
+result path /tmp/esvio_result/esvio_result_no_loop.csv
+[33m[WARN] [1793623434.426950271]:  Optimize extrinsic param around initial guess![0m
+[0m[INFO] [1793623434.426857117]: ROW_Image: 260.000000 COL_Image: 346.000000 [0m
+[0m[INFO] [1793623434.426933941]: ROW_Event: 260.000000 COL_EVENT: 346.000000 [0m
+[0m[INFO] [1793623434.427972024]: give an T to the extrinsic of cam [0m
+[0m[INFO] [1793623434.428085105]: give an T to the extrinsic of event [0m
+[0m[INFO] [1793623434.428183855]: Extrinsic_R : 
+   0.999877   0.0150817  0.00426006
+ -0.0151284    0.999823   0.0111549
+-0.00409108   -0.011218    0.999929[0m
+[0m[INFO] [1793623434.428347785]: Extrinsic_T : 
+0.00286126 0.00180892  0.0177984[0m
+[0m[INFO] [1793623434.428498154]: Extrinsic_R_event : 
+   0.999877   0.0150817  0.00426006
+ -0.0151284    0.999823   0.0111549
+-0.00409108   -0.011218    0.999929[0m
+[0m[INFO] [1793623434.428625205]: Extrinsic_T_event : 
+0.00286126 0.00180892  0.0177984[0m
+[0m[INFO] [1793623434.434685940]: parameters.cpp: gravity_norm: 1.000000[0m
+parameters.cpp: Not use sampson model
+parameters.cpp: Yes use geometric correction
+[33m[WARN] [1793623434.442954319]: waiting for event, image and imu...[0m
+[33m[WARN] [1793623434.453574935]: into event point feature detection and tracking[0m
+[33m[WARN] [1793623434.539579090]: into stereo image feature detection and tracking[0m
+vocabulary_file/catkin_ws/src/ESVIO/pose_graph/support_files/brief_k10L6.bin
+loop start load vocabulary
+BRIEF_PATTERN_FILE/catkin_ws/src/ESVIO/pose_graph/support_files/brief_pattern.yml
+Failed to create folder  
+[0m[INFO] [1793623434.470631758]: Loaded config_file: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/esvio.yaml[0m
+[0m[INFO] [1793623434.477839002]: Loaded esvio_folder: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/[0m
+[0m[INFO] [1793623434.478214664]: Rrl_event: 
+   0.999929   0.0110881 -0.00446785
+ -0.0110428    0.999889   0.0100295
+ 0.00457856 -0.00997948     0.99994[0m
+[0m[INFO] [1793623434.478361333]: Trl_event: 
+  -0.0998814 -0.000392707  1.88801e-06[0m
+[0m[INFO] [1793623434.478408446]: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying//event0_esvio.yaml[0m
+[0m[INFO] [1793623434.485795351]: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying//event1_esvio.yaml[0m
+226.018       0     173
+      0 225.787     130
+      0       0       1
+[33m[WARN] [1793623446.072390182]: ---------------5points----------------[0m
+[33m[WARN] [1793623446.073435958]: input points 100 2D inliers 3D inliers 25[0m
+[33m[WARN] [1793623446.529201961]: gyroscope bias initial calibration -0.00639561  -0.0426676   0.0119049[0m
+[33m[WARN] [1793623446.542750210]: estimated scale: -0.009304[0m
+[33m[WARN] [1793623446.543495896]:  result g     8.80024 0.504543 -8.52354 -2.13049[0m
+[33m[WARN] [1793623446.598503053]: ---------------5points----------------[0m
+[33m[WARN] [1793623446.599495676]: input points 101 2D inliers 3D inliers 29[0m
+[33m[WARN] [1793623446.944328777]: gyroscope bias initial calibration   0.0162338   0.0136278 -0.00853491[0m
+[33m[WARN] [1793623446.955308804]: estimated scale: -0.002766[0m
+[33m[WARN] [1793623446.956198219]:  result g     8.86687 0.565062 -8.59328 -2.11131[0m
+[33m[WARN] [1793623447.084973598]: ---------------5points----------------[0m
+[33m[WARN] [1793623447.085951312]: input points 97 2D inliers 3D inliers 25[0m
+[33m[WARN] [1793623447.725615511]: ---------------5points----------------[0m
+[33m[WARN] [1793623447.726519780]: input points 89 2D inliers 3D inliers 20[0m
+[33m[WARN] [1793623447.926883070]: gyroscope bias initial calibration -0.0454134 0.00917705 -0.0414972[0m
+terminate called without an active exception
+terminate called without an active exception
+terminate called without an active exception
+terminate called without an active exception

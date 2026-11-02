@@ -1,0 +1,3 @@
+Profiling processes matching ['svo_node', 'dvs_mapping', 'dvs_tracking', 'dvs_bootstrapping', 'trigger_map_expansion', 'pose_to_tf']
+Samples: 1234  Mean CPU (% of one core): 294.6  Peak memory: 710 MB  Logged for 126.3 s
+Saved /work/runs/shapes_6dof_run2_profile.csv

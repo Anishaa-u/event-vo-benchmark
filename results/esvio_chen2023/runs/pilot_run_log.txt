@@ -1,0 +1,2 @@
+flying1_run1 | rate 1.0x | wall 27.3 s (start 1793623214.744161275, end 1793623242.072085035) | poses 370 | respawns 0 | Samples: 305  Mean CPU (% of one core): 460.6  Peak memory: 669 MB  Logged for 32.1 s
+flying1_run2 | rate 0.5x | wall 53.2 s (start 1793623329.711096015, end 1793623382.914298404) | poses 356 | respawns 0 | Samples: 545  Mean CPU (% of one core): 362.7  Peak memory: 668 MB  Logged for 58.1 s

@@ -19,10 +19,10 @@ KITS = {
 ALGO_FILES = {  # files that define how an algorithm is built and run
     "esvo": ["Dockerfile", "make_headless_launch.py", "run_esvo.sh", "stop_esvo.sh", "clock_keeper.py",
              "bag_groundtruth_to_tum.py", ".devcontainer/devcontainer.json"],
-    "evo": ["Dockerfile", "make_headless_launch.py", "run_evo.sh", "stop_evo.sh", "bag_pose_to_tum.py"],
-    "esvio_chen2023": ["Dockerfile", "make_headless_launch.py", "run_esvio.sh", "stop_esvio.sh"],
+    "evo": ["Dockerfile", "make_headless_launch.py", "run_evo.sh", "stop_evo.sh", "bag_pose_to_tum.py", "record_pose.py", "diag_evo.sh"],
+    "esvio_chen2023": ["Dockerfile", "make_headless_launch.py", "run_esvio.sh", "stop_esvio.sh", "check_bag_imu.py", "io_test.sh"],
 }
-ADAPTERS = {"esvio_chen2023": ["esvio_csv_to_tum.py"], "evo": ["bag_pose_to_tum.py"]}
+ADAPTERS = {"esvio_chen2023": ["esvio_csv_to_tum.py"], "evo": ["bag_pose_to_tum.py", "record_pose.py"]}
 RESULT_FILES = ["NOTES.txt", "results.csv", "summary.csv", "esvo_results.csv", "esvo_summary.csv",
                 "ESVO_DATA_PACK.md", "EVO_DATA_PACK.md", "ESVIO_DATA_PACK.md"]
 SKIP_EXT = {".bag", ".active"}
@@ -66,11 +66,11 @@ def main():
     n += copy(os.path.join(KITS["esvo"], "evaluate_esvo.py"), os.path.join(REPO, "evaluate", "evaluate_esvo.py"))
     n += copy(os.path.join(KITS["esvio_chen2023"], "profile_procs.py"), os.path.join(REPO, "profile", "profile_procs.py"))
     n += copy(os.path.join(KITS["esvo"], "profile_esvo.py"), os.path.join(REPO, "profile", "profile_esvo.py"))
-    for f in ["ALL_RESULTS_DATA_PACK.md", "make_data_packs.py", "sync_repo.py"]:
+    for f in ["ALL_RESULTS_DATA_PACK.md", "make_data_packs.py", "make_leaderboard.py", "sync_repo.py"]:
         n += copy(os.path.join(ROOT, f), os.path.join(REPO, "results" if f.endswith(".md") else "tools", f))
     for f in ["leaderboard.csv"]:
         n += copy(os.path.join(ROOT, f), os.path.join(REPO, "results", f))
-    for f in ["build_report.py", "make_figures.py"]:
+    for f in ["build_report.py", "make_figures.py", "assemble.py", "fill_values.py"]:
         n += copy(os.path.join(ROOT, "report", f), os.path.join(REPO, "tools", f))
     print(f"Copied {n} files into {REPO}")
 

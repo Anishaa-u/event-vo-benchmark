@@ -7,6 +7,7 @@ with '%' before the first heading form the title page.
     python build_report.py report.md Final_Report.docx
 """
 
+import os
 import re
 import sys
 
@@ -51,6 +52,43 @@ def add_field(par, instr):
             el.set(qn("xml:space"), "preserve")
             el.text = text
         run._r.append(el)
+
+
+def new_list_num(doc, style_par):
+    """Create a fresh numbering instance (restarting at 1) based on the List Number style."""
+    numbering = doc.part.numbering_part.numbering_definitions._numbering
+    num_pr = style_par.style.element.pPr.numPr
+    base_num_id = num_pr.numId.val
+    abstract_id = None
+    for num in numbering.findall(qn("w:num")):
+        if num.get(qn("w:numId")) == str(base_num_id):
+            abstract_id = num.find(qn("w:abstractNumId")).get(qn("w:val"))
+    new_id = max(int(n.get(qn("w:numId"))) for n in numbering.findall(qn("w:num"))) + 1
+    num = OxmlElement("w:num")
+    num.set(qn("w:numId"), str(new_id))
+    an = OxmlElement("w:abstractNumId")
+    an.set(qn("w:val"), abstract_id)
+    num.append(an)
+    ov = OxmlElement("w:lvlOverride")
+    ov.set(qn("w:ilvl"), "0")
+    so = OxmlElement("w:startOverride")
+    so.set(qn("w:val"), "1")
+    ov.append(so)
+    num.append(ov)
+    numbering.append(num)
+    return new_id
+
+
+def set_num(par, num_id):
+    p_pr = par._p.get_or_add_pPr()
+    num_pr = OxmlElement("w:numPr")
+    ilvl = OxmlElement("w:ilvl")
+    ilvl.set(qn("w:val"), "0")
+    nid = OxmlElement("w:numId")
+    nid.set(qn("w:val"), str(num_id))
+    num_pr.append(ilvl)
+    num_pr.append(nid)
+    p_pr.append(num_pr)
 
 
 def shade(cell, hex_fill):
@@ -181,7 +219,11 @@ def main(src, dst):
             p = doc.add_paragraph()
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER
             p.paragraph_format.keep_with_next = True
-            p.add_run().add_picture(m.group(2), width=Cm(15.5))
+            img = os.path.join(os.path.dirname(os.path.abspath(src)), m.group(2))
+            if os.path.exists(img):
+                p.add_run().add_picture(img, width=Cm(15.5))
+            else:
+                p.add_run("[Figure pending: %s]" % m.group(2)).italic = True
             cp = doc.add_paragraph(style="Caption")
             add_inline(cp, m.group(1))
         elif re.match(r"^Table [A-Z]?\d+\.", s) and i + 1 < len(lines) and lines[i + 1].strip().startswith("|"):
@@ -201,8 +243,9 @@ def main(src, dst):
             p = doc.add_paragraph(style="List Number")
             add_inline(p, re.sub(r"^\d+\. ", "", s))
             p.paragraph_format.space_after = Pt(3)
-            if numbered_restart and not s.startswith("1. ") is False:
-                pass
+            if s.startswith("1. "):
+                current_num = new_list_num(doc, p)
+            set_num(p, current_num)
         elif s.startswith("> "):
             # hanging-indent reference entry
             p = doc.add_paragraph()

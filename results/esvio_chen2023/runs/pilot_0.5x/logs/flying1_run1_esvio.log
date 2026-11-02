@@ -1,0 +1,131 @@
+[0m[INFO] [1793623322.841783113]: init begins[0m
+[0m[INFO] [1793623322.850758797]: Loaded config_file: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/esvio.yaml[0m
+result path /tmp/esvio_result/esvio_result_no_loop.csv
+[33m[WARN] [1793623322.855324144]:  Optimize extrinsic param around initial guess![0m
+[0m[INFO] [1793623322.855126686]: ROW_Image: 260.000000 COL_Image: 346.000000 [0m
+[0m[INFO] [1793623322.855285504]: ROW_Event: 260.000000 COL_EVENT: 346.000000 [0m
+[0m[INFO] [1793623322.856406490]: give an T to the extrinsic of cam [0m
+[0m[INFO] [1793623322.856545654]: give an T to the extrinsic of event [0m
+[0m[INFO] [1793623322.856772288]: Extrinsic_R : 
+   0.999877   0.0150817  0.00426006
+ -0.0151284    0.999823   0.0111549
+-0.00409108   -0.011218    0.999929[0m
+[0m[INFO] [1793623322.856924703]: Extrinsic_T : 
+0.00286126 0.00180892  0.0177984[0m
+[0m[INFO] [1793623322.856992896]: Extrinsic_R_event : 
+   0.999877   0.0150817  0.00426006
+ -0.0151284    0.999823   0.0111549
+-0.00409108   -0.011218    0.999929[0m
+[0m[INFO] [1793623322.857125922]: Extrinsic_T_event : 
+0.00286126 0.00180892  0.0177984[0m
+[0m[INFO] [1793623322.863095763]: parameters.cpp: gravity_norm: 1.000000[0m
+parameters.cpp: Not use sampson model
+parameters.cpp: Yes use geometric correction
+[33m[WARN] [1793623322.868985503]: waiting for event, image and imu...[0m
+[33m[WARN] [1793623322.896216380]: into event point feature detection and tracking[0m
+[33m[WARN] [1793623322.931634995]: into stereo image feature detection and tracking[0m
+vocabulary_file/catkin_ws/src/ESVIO/pose_graph/support_files/brief_k10L6.bin
+loop start load vocabulary
+BRIEF_PATTERN_FILE/catkin_ws/src/ESVIO/pose_graph/support_files/brief_pattern.yml
+Failed to create folder  
+[0m[INFO] [1793623322.913723757]: Loaded config_file: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/esvio.yaml[0m
+[0m[INFO] [1793623322.922944775]: Loaded esvio_folder: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/[0m
+[0m[INFO] [1793623322.923373911]: Rrl_event: 
+   0.999929   0.0110881 -0.00446785
+ -0.0110428    0.999889   0.0100295
+ 0.00457856 -0.00997948     0.99994[0m
+[0m[INFO] [1793623322.923462259]: Trl_event: 
+  -0.0998814 -0.000392707  1.88801e-06[0m
+[0m[INFO] [1793623322.923487765]: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying//event0_esvio.yaml[0m
+[0m[INFO] [1793623322.929258988]: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying//event1_esvio.yaml[0m
+226.018       0     173
+      0 225.787     130
+      0       0       1
+[33m[WARN] [1793623332.339992750]: ---------------5points----------------[0m
+[33m[WARN] [1793623332.341056779]: input points 100 2D inliers 3D inliers 25[0m
+[33m[WARN] [1793623332.827036510]: ---------------5points----------------[0m
+[33m[WARN] [1793623332.827768268]: input points 101 2D inliers 3D inliers 29[0m
+[33m[WARN] [1793623333.153894730]: gyroscope bias initial calibration  0.0103592 -0.0255564 0.00239719[0m
+[33m[WARN] [1793623333.165326920]: estimated scale: -0.002766[0m
+[33m[WARN] [1793623333.166099363]:  result g     8.86687 0.565609 -8.59328 -2.11113[0m
+[33m[WARN] [1793623333.194125885]: ---------------5points----------------[0m
+[33m[WARN] [1793623333.194864800]: input points 97 2D inliers 3D inliers 25[0m
+[33m[WARN] [1793623333.677913542]: ---------------5points----------------[0m
+[33m[WARN] [1793623333.679106617]: input points 89 2D inliers 3D inliers 20[0m
+[33m[WARN] [1793623334.047203678]: gyroscope bias initial calibration -0.00664503   0.0190252  -0.0316445[0m
+[33m[WARN] [1793623334.063386097]: estimated scale: -0.001352[0m
+[33m[WARN] [1793623334.067678968]:  result g     8.9013 0.731622 -8.61641 -2.11075[0m
+[33m[WARN] [1793623334.092605369]: ---------------5points----------------[0m
+[33m[WARN] [1793623334.098200001]: input points 84 2D inliers 3D inliers 19[0m
+[33m[WARN] [1793623334.573338954]: ---------------5points----------------[0m
+[33m[WARN] [1793623334.574684896]: input points 80 2D inliers 3D inliers 17[0m
+[33m[WARN] [1793623335.048081037]: ---------------5points----------------[0m
+[33m[WARN] [1793623335.048922756]: input points 77 2D inliers 3D inliers 18[0m
+[33m[WARN] [1793623335.535738677]: ---------------5points----------------[0m
+[33m[WARN] [1793623335.536505869]: input points 76 2D inliers 3D inliers 13[0m
+[33m[WARN] [1793623336.017629952]: ---------------5points----------------[0m
+[33m[WARN] [1793623336.021543390]: input points 74 2D inliers 3D inliers 19[0m
+[33m[WARN] [1793623336.296790516]: gyroscope bias initial calibration -0.00575337 -0.00853661 -0.00519239[0m
+[33m[WARN] [1793623336.310918168]: estimated scale: -0.003106[0m
+[33m[WARN] [1793623336.311719730]:  result g     8.70158 0.671999 -8.43648 -2.02281[0m
+[33m[WARN] [1793623336.343268527]: ---------------5points----------------[0m
+[33m[WARN] [1793623336.344083391]: input points 76 2D inliers 3D inliers 19[0m
+[33m[WARN] [1793623336.554160019]: gyroscope bias initial calibration   -0.048277  -0.0213236 -0.00498027[0m
+[0m[INFO] [1793623322.864999993]: Extrinsic_R2 : 
+   0.999946  0.00262837   0.0100576
+-0.00265805    0.999992  0.00293933
+ -0.0100498  -0.0029659    0.999945[0m
+[0m[INFO] [1793623322.865137432]: Extrinsic_T2 : 
+  0.100703 0.00193472  0.0167828[0m
+[0m[INFO] [1793623322.865210409]: Rrl: 
+   0.999929   0.0110881 -0.00446785
+ -0.0110428    0.999889   0.0100295
+ 0.00457856 -0.00997948     0.99994[0m
+[0m[INFO] [1793623322.865315227]: Trl: 
+  -0.0998814 -0.000392707  1.88801e-06[0m
+[0m[INFO] [1793623322.866682647]: Loaded esvio_folder: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/[0m
+[0m[INFO] [1793623322.866828866]: Extrinsic_R2_event : 
+   0.999946  0.00262837   0.0100576
+-0.00265805    0.999992  0.00293933
+ -0.0100498  -0.0029659    0.999945[0m
+[0m[INFO] [1793623322.866850273]: Extrinsic_T2_event : 
+  0.100703 0.00193472  0.0167828[0m
+[0m[INFO] [1793623322.866884579]: Rrl_event: 
+   0.999929   0.0110881 -0.00446785
+ -0.0110428    0.999889   0.0100295
+ 0.00457856 -0.00997948     0.99994[0m
+[0m[INFO] [1793623322.866931363]: Trl_event: 
+  -0.0998814 -0.000392707  1.88801e-06[0m
+[0m[INFO] [1793623322.867886586]: Loaded esvio_folder: /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/[0m
+[0m[INFO] [1793623322.868034363]: Unsynchronized sensors, online estimate time offset, initial td: 0[0m
+[0m[INFO] [1793623322.868144948]: estimator.cpp: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/cam0_esvio.yaml[0m
+[0m[INFO] [1793623322.868686753]: estimator.cpp: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/cam1_esvio.yaml[0m
+[0m[INFO] [1793623322.868825381]: estimator.cpp: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/event0_esvio.yaml[0m
+[0m[INFO] [1793623322.868894641]: estimator.cpp: reading paramerter of camera /catkin_ws/src/ESVIO/feature_tracker/../config/esvio_mvsec_flying/event1_esvio.yaml[0m
+[0m[INFO] [1793623332.578310270]: average_parallax 85.141433 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1793623332.791187299]: global SFM failed![0m
+[0m[INFO] [1793623333.060652523]: average_parallax 87.710588 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1793623333.150310759]: global SFM success![0m
+[0m[INFO] [1793623333.167040847]: misalign visual structure with IMU[0m
+[0m[INFO] [1793623333.434490893]: average_parallax 88.470375 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1793623333.644557670]: global SFM failed![0m
+[0m[INFO] [1793623333.917172999]: average_parallax 88.105392 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1793623334.044946282]: global SFM success![0m
+[0m[INFO] [1793623334.068360627]: misalign visual structure with IMU[0m
+[0m[INFO] [1793623334.333341767]: average_parallax 77.896632 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1793623334.541173864]: global SFM failed![0m
+[0m[INFO] [1793623334.809835770]: average_parallax 80.462809 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1793623335.018965085]: global SFM failed![0m
+[0m[INFO] [1793623335.290446074]: average_parallax 72.836379 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1793623335.499333510]: global SFM failed![0m
+[0m[INFO] [1793623335.768754986]: average_parallax 78.004339 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1793623335.977296585]: global SFM failed![0m
+[0m[INFO] [1793623336.250405236]: average_parallax 81.916126 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1793623336.291753520]: global SFM success![0m
+[0m[INFO] [1793623336.313193593]: misalign visual structure with IMU[0m
+[0m[INFO] [1793623336.589872542]: total depth rmse: 0.863707 [0m
+[0m[INFO] [1793623336.707797296]: Initialization finish![0m
+[0m[INFO] [1793623341.129038320]: terminate called without an active exception
+terminate called without an active exception
+terminate called without an active exception
+terminate called without an active exception

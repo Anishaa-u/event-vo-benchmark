@@ -1,0 +1,6 @@
+flying1_run1 | rate 0.25x | wall 282.9 s (start 1793629411.422962202, end 1793629694.336502317) | poses 980 | respawns 0 | Samples: 2691  Mean CPU (% of one core): 146.5  Peak memory: 759 MB  Logged for 287.8 s
+flying1_run2 | rate 0.25x | wall 282.7 s (start 1793629714.757857830, end 1793629997.478169636) | poses 980 | respawns 0 | Samples: 2711  Mean CPU (% of one core): 127.3  Peak memory: 761 MB  Logged for 287.5 s
+flying1_run3 | rate 0.25x | wall 282.7 s (start 1793630017.471826761, end 1793630300.122992304) | poses 980 | respawns 0 | Samples: 2696  Mean CPU (% of one core): 132.0  Peak memory: 764 MB  Logged for 287.5 s
+flying3_run1 | rate 0.25x | wall 379.1 s (start 1793630320.182944858, end 1793630699.295554079) | poses 1289 | respawns 0 | Samples: 3557  Mean CPU (% of one core): 147.9  Peak memory: 870 MB  Logged for 384.0 s
+flying3_run2 | rate 0.25x | wall 401.2 s (start 1793630720.657268060, end 1793631121.878268874) | poses 492 | respawns 0 | Samples: 998  Mean CPU (% of one core): 232.6  Peak memory: 900 MB  Logged for 406.0 s
+flying3_run3 | rate 0.25x | wall 401.2 s (start 1793631141.919809866, end 1793631543.154995899) | poses 635 | respawns 0 | Samples: 1491  Mean CPU (% of one core): 159.5  Peak memory: 852 MB  Logged for 406.1 s

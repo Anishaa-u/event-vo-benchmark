@@ -1,13 +1,18 @@
 #!/bin/bash
 # One ESVIO run on an MVSEC indoor_flying sequence, end to end. Run inside the container from /work:
 #     bash run_esvio.sh flying1 1
-# Plays the same edited bag used for ESVO at RATE (default 1.0, real time), profiles CPU and
-# memory, logs the IMU and feature rates, then saves the odometry trajectory (no loop closure)
-# to runs/<seq>_run<k>.txt and the loop-closed trajectory to runs/loop/<seq>_run<k>.txt.
+# Plays the same edited bag used for ESVO (ORIG=0) or the original full MVSEC data bag (ORIG=1),
+# which starts with the drone at rest as ESVIO's initialisation expects, at RATE (default 1.0),
+# profiles CPU and memory, then saves the odometry trajectory (no loop closure) to
+# runs/<seq>_run<k>.txt and the loop-closed trajectory to runs/loop/<seq>_run<k>.txt.
 SEQ=$1; RUN=$2
 RATE=${RATE:-1.0}
-BAG=/work/data/indoor_${SEQ}_edited.bag
-OUT=/work/runs; TMP=/tmp/esvio_result
+ORIG=${ORIG:-0}
+if [ "$ORIG" = "1" ]; then SRC=/work/data_orig/indoor_${SEQ}_data.bag; else SRC=/work/data/indoor_${SEQ}_edited.bag; fi
+BAG=/tmp/$(basename $SRC)
+# play from the container's own disk, not the slower Windows-mounted folder
+[ -f $BAG ] || cp $SRC $BAG
+OUT=${OUT:-/work/runs}; TMP=/tmp/esvio_result
 NAME=${SEQ}_run${RUN}
 source /catkin_ws/devel/setup.bash
 mkdir -p $OUT/logs $OUT/loop; rm -rf $TMP; mkdir -p $TMP

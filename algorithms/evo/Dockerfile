@@ -35,7 +35,10 @@ WORKDIR /catkin_ws
 RUN apt-get update && (rosdep update --rosdistro melodic || true) \
  && rosdep install --from-paths src --ignore-src --rosdistro melodic -r -y \
  && rm -rf /var/lib/apt/lists/*
-RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && catkin build dvs_tracking"
+# dvs_tracking declares the live-camera drivers in package.xml but never uses them in code
+RUN sed -i '/<depend>dvs_ros_driver<\/depend>/d; /<depend>davis_ros_driver<\/depend>/d' \
+      src/rpg_dvs_evo_open/dvs_tracking/package.xml
+RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && catkin build -j6 dvs_tracking"
 
 RUN cd /catkin_ws/src/rpg_dvs_evo_open && git rev-parse HEAD > /catkin_ws/EVO_COMMIT.txt
 RUN echo "source /catkin_ws/devel/setup.bash" >> /root/.bashrc
