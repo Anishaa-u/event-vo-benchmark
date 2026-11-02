@@ -1,0 +1,52 @@
+# Sensor compatibility register (requirement R1) and core sequence set (R2)
+sequences:
+  mvsec_indoor_flying1_esvo_edited:
+    dataset: MVSEC (Zhu et al., 2018), edited by the ESVO authors for ESVO's event rate
+    file: indoor_flying1_edited.bag   # 655 MB
+    source: ESVO project page, edited upenn stereo dataset (Google Drive folder 1FbABakLVcWAGsA7E5CN11vVovdWQfDEx)
+    cameras: stereo DAVIS346
+    resolution: [346, 260]
+    imu: true
+    frames: true
+    duration_s: 26.0
+    ground_truth: /davis/left/pose (motion capture, 2112 poses)
+    usable_by: [esvo, esvio_chen2023]
+  mvsec_indoor_flying3_esvo_edited:
+    dataset: MVSEC (Zhu et al., 2018), edited by the ESVO authors for ESVO's event rate
+    file: indoor_flying3_edited.bag   # 627 MB
+    source: ESVO project page, edited upenn stereo dataset (Google Drive folder 1FbABakLVcWAGsA7E5CN11vVovdWQfDEx)
+    cameras: stereo DAVIS346
+    resolution: [346, 260]
+    imu: true
+    frames: true
+    ground_truth: /davis/left/pose (motion capture, 2119 poses)
+    usable_by: [esvo, esvio_chen2023]
+  rpg_shapes_6dof:
+    dataset: RPG Event Camera Dataset (Mueggler et al., 2017)
+    file: shapes_6dof.bag   # 322 MB
+    source: https://rpg.ifi.uzh.ch/datasets/davis/shapes_6dof.bag
+    cameras: monocular DAVIS240C
+    resolution: [240, 180]
+    imu: true
+    frames: true
+    ground_truth: /optitrack/davis (motion capture)
+    usable_by: [evo]
+  rpg_boxes_6dof:
+    dataset: RPG Event Camera Dataset (Mueggler et al., 2017)
+    file: boxes_6dof.bag   # 1.6 GB
+    source: https://rpg.ifi.uzh.ch/datasets/davis/boxes_6dof.bag
+    cameras: monocular DAVIS240C
+    resolution: [240, 180]
+    imu: true
+    frames: true
+    ground_truth: /optitrack/davis (motion capture)
+    usable_by: [evo]
+  evo_flyingroom_sample:
+    dataset: EVO code example (Rebecq et al., 2017), functional check only, no ground truth used
+    file: evo_flyingroom.bag   # 564 MB
+    source: http://rpg.ifi.uzh.ch/data/EVO/code_examples/evo_flyingroom.bag
+    usable_by: [evo]
+algorithms:
+  evo:            {paper: "Rebecq et al. (2017), doi:10.1109/LRA.2016.2645143", code: uzh-rpg/rpg_dvs_evo_open, commit: 14c72916b40c2d5fbd7197b772198c3ca75f4cbe, ros: melodic, needs: [mono events], alignment: sim3}
+  esvo:           {paper: "Zhou et al. (2021), doi:10.1109/TRO.2021.3062252", code: HKUST-Aerial-Robotics/ESVO, commit: 1639a43ca3c5411b73a083c654f1aef73d8e0319, ros: noetic, needs: [stereo events], alignment: se3}
+  esvio_chen2023: {paper: "Chen et al. (2023), doi:10.1109/LRA.2023.3269950", code: arclab-hku/ESVIO, commit: b9e5aee7db647b70cee6f1128e2f49f47107ca84, ros: noetic, needs: [stereo events, stereo frames, imu], alignment: se3}

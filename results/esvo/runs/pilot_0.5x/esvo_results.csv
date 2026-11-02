@@ -1,0 +1,2 @@
+sequence,run,associated_poses,coverage_percent,ate_se3_m,ate_sim3_m,sim3_scale,rpe_1s_rmse_m,rpe_1s_percent
+flying1,1,516,98.2,0.882058964427614,0.7852929996405559,0.7471541665488607,0.39112361810834223,69.54330824487145

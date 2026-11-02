@@ -1,0 +1,3 @@
+Profiling ESVO processes. Press Ctrl+C after the trajectory is saved.
+Samples: 1023  Mean CPU (% of one core): 287.6  Peak memory: 1617 MB  Logged for 107.4 s
+Saved /work/runs/flying3_run2_profile.csv

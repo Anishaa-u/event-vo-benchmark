@@ -1,0 +1,51 @@
+﻿ESVO pilot - experiment notes
+=============================
+Hardware
+  CPU: 12th Gen Intel(R) Core(TM) i7-1255U
+  Cores / threads: 10 / 12
+  RAM: 15.7 GB
+  OS: Microsoft Windows 11 Home build 26200
+  Docker engine: 29.9.2 (Docker Desktop 4.97.0, WSL 2 backend)
+
+Data (ESVO project page, edited upenn stereo dataset, Google Drive)
+  indoor_flying1_edited.bag  655 MB
+  indoor_flying3_edited.bag  627 MB
+  Downloaded: 2026-11-02
+
+Setup changes
+  Dockerfile: removed separate rpg_dvs_ros clone (already in ESVO dependencies.yaml)
+  Dockerfile: added rosdep install step (first build failed: image_geometry missing)
+  Base image osrf/ros:noetic-desktop (Ubuntu 20.04, ROS Noetic). Container sees 12 threads, ~7.7 GB RAM (WSL 2 default)
+
+ESVO commit: 1639a43ca3c5411b73a083c654f1aef73d8e0319 (HKUST-Aerial-Robotics/ESVO, master)
+
+Config changes (everything else is ESVO's shipped upenn configuration)
+  cfg/tracking/tracking_upenn.yaml
+    SAVE_TRAJECTORY: False -> True
+    PATH_TO_SAVE_TRAJECTORY: /home/zhouyi/... -> /tmp/esvo_result/ (copied to runs/<seq>_run<k>.txt)
+  launch/system/system_upenn_headless.launch = system_upenn.launch with rqt_gui and rviz removed (no display)
+  Sync timer (global_timer): 50 Hz -> 25 Hz, to match 0.25x playback (keeps 100 Hz time surfaces in bag time)
+  Bag playback: rosbag play -r 0.25 --clock (ESVO default upenn launcher uses -r 0.5)
+  Ground truth: /davis/left/pose (motion capture), 2112 poses (flying1), 2119 poses (flying3)
+
+Procedure fix
+  ESVO only saves on ESVO_SYSTEM_STATUS=TERMINATE, but its tracking loop sleeps on sim time, which
+  stops when the bag ends. clock_keeper.py continues /clock from the bag end time so the save happens.
+
+Pilot at ESVO default rate (0.5x, 50 Hz sync), flying1, kept in runs/pilot_0.5x/
+  TS_left 43.7 Hz (target ~100 Hz): two time-surface nodes at ~96% of a core each, could not keep up
+  Only 523 poses saved (~21 Hz) vs ~2100-2400 (~90 Hz) in the 0.25x runs: tracker updated far less often
+  14 "resetRegProblem RESET fails for no enough events" warnings (main 0.25x runs: 205-370, non-fatal)
+  ATE (SE3) 0.882 m, RPE 69.5%, coverage 98.2%, Sim(3) scale 0.747
+  -> laptop cannot run ESVO at the authors' default rate; main runs use 0.25x (requirement R6: non-real-time, recorded)
+
+Runs (0.25x): see runs/run_log.txt, esvo_results.csv, esvo_summary.csv
+
+Results (0.25x, 3 runs per sequence)
+flying1_run1 | rate 0.25x, sync 25 Hz | wall 105.7 s (start 1793611014.750538524, end 1793611120.466170095) | TS_left 99.314 Hz | poses 2171 | Samples: 1053  Mean CPU (% of one core): 366.3  Peak memory: 1625 MB  Logged for 112.7 s
+flying1_run2 | rate 0.25x, sync 25 Hz | wall 105.5 s (start 1793611157.418949215, end 1793611262.950595602) | TS_left 99.950 Hz | poses 2358 | Samples: 1065  Mean CPU (% of one core): 330.7  Peak memory: 1625 MB  Logged for 112.6 s
+flying1_run3 | rate 0.25x, sync 25 Hz | wall 105.5 s (start 1793611285.064269014, end 1793611390.611334645) | TS_left 100.019 Hz | poses 2363 | Samples: 1067  Mean CPU (% of one core): 307.5  Peak memory: 1623 MB  Logged for 112.3 s
+flying3_run1 | rate 0.25x, sync 25 Hz | wall 102.1 s (start 1793611412.219403052, end 1793611514.297565090) | TS_left 99.916 Hz | poses 2325 | Samples: 1039  Mean CPU (% of one core): 279.1  Peak memory: 1620 MB  Logged for 108.6 s
+flying3_run2 | rate 0.25x, sync 25 Hz | wall 101.6 s (start 1793611535.777666736, end 1793611637.403167764) | TS_left 99.952 Hz | poses 2341 | Samples: 1023  Mean CPU (% of one core): 287.6  Peak memory: 1617 MB  Logged for 107.4 s
+flying3_run3 | rate 0.25x, sync 25 Hz | wall 101.4 s (start 1793611658.028417128, end 1793611759.459841974) | TS_left 99.992 Hz | poses 1797 | Samples: 1037  Mean CPU (% of one core): 304.7  Peak memory: 1620 MB  Logged for 110.2 s
+  No run lost tracking or crashed; all six saved trajectories with 98-100% coverage. The 'RESET fails for no enough events' warnings (205-370 per run) are non-fatal, ESVO continues.

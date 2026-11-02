@@ -1,0 +1,189 @@
+[33m[WARN] [1793610487.122221445]: Cannot find value for parameter: ITERATION_OPTIMIZATION, assigning default: 10[0m
+[33m[WARN] [1793610487.125058591]: Cannot find value for parameter: RegularizationRadius, assigning default: 5[0m
+[33m[WARN] [1793610487.127033597]: Cannot find value for parameter: RegularizationMinNeighbours, assigning default: 8[0m
+[33m[WARN] [1793610487.128899821]: Cannot find value for parameter: RegularizationMinCloseNeighbours, assigning default: 8[0m
+[33m[WARN] [1793610487.185141253]: Cannot find value for parameter: ResetButton, assigning default: 0[0m
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I1102 09:08:15.335676   320 esvo_Mapping.cpp:481] ********** Initialization (SGM) returns 657 points.
+I1102 09:08:15.355700   320 esvo_Mapping.cpp:237] Initialization is successfully done!
+I1102 09:08:15.408950   320 esvo_Mapping.cpp:481] ********** Initialization (SGM) returns 120 points.
+I1102 09:08:15.409715   320 esvo_Mapping.cpp:243] Initialization fails once.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I1102 09:08:31.292591   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:31.294925   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:31.489902   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:31.491163   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:31.838027   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:31.839329   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:32.928411   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:32.929343   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:33.048599   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:33.049531   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:33.207765   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:33.208967   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:33.525193   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:33.526154   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:33.967134   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:33.968429   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:34.005434   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:34.006861   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:34.121992   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:34.123777   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:34.275393   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:34.276343   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:35.717698   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:35.719069   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:42.340116   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:42.341327   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:08:55.417879   316 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:08:55.418879   316 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:09:15.633172   316 esvo_Tracking.cpp:100] The tracking node is terminated manually...
+I1102 09:09:15.635062   316 esvo_Tracking.cpp:196] pose size: 523
+I1102 09:09:15.636270   316 esvo_Tracking.cpp:197] refPCMap_.size(): 10, TS_history_.size(): 100
+I1102 09:09:15.637123   316 esvo_Tracking.cpp:433] Saving trajectory to /tmp/esvo_result/result.txt ......
+I1102 09:09:15.655452   316 esvo_Tracking.cpp:461] Saving trajectory to /tmp/esvo_result/result.txt. Done !!!!!!.
+I1102 09:09:16.765058   320 esvo_Mapping.cpp:198] The Mapping node is terminated manually...
+I1102 09:15:05.094089   276 esvo_Mapping.cpp:767] Coming into reset()
+I1102 09:15:05.094903   276 esvo_Mapping.cpp:769] (reset) The mapping thread future is waiting for the value.
+terminate called after throwing an instance of 'std::future_error'
+  what():  std::future_error: Broken promise
+[0m[INFO] [1793610486.999270700]: Found parameter: calibInfoDir, value: /catkin_ws/src/ESVO/esvo_core/calib/upenn[0m
+[0m[INFO] [1793610487.066282342]: Found parameter: RegProblemType, value: 1[0m
+[0m[INFO] [1793610487.070214545]: Found parameter: patch_size_X, value: 1[0m
+[0m[INFO] [1793610487.073247017]: Found parameter: patch_size_Y, value: 1[0m
+[0m[INFO] [1793610487.076346578]: Found parameter: kernelSize, value: 5[0m
+[0m[INFO] [1793610487.079710887]: Found parameter: LSnorm, value: Huber[0m
+[0m[INFO] [1793610487.083960953]: Found parameter: huber_threshold, value: 50[0m
+[0m[INFO] [1793610487.088003780]: Found parameter: invDepth_min_range, value: 0.16[0m
+[0m[INFO] [1793610487.091813870]: Found parameter: invDepth_max_range, value: 1[0m
+[0m[INFO] [1793610487.094650109]: Found parameter: MIN_NUM_EVENTS, value: 1000[0m
+[0m[INFO] [1793610487.097630774]: Found parameter: MAX_REGISTRATION_POINTS, value: 2000[0m
+[0m[INFO] [1793610487.101647970]: Found parameter: BATCH_SIZE, value: 300[0m
+[0m[INFO] [1793610487.105164982]: Found parameter: MAX_ITERATION, value: 10[0m
+[0m[INFO] [1793610487.108166333]: Found parameter: dvs_frame_id, value: dvs[0m
+[0m[INFO] [1793610487.111410413]: Found parameter: world_frame_id, value: map[0m
+[0m[INFO] [1793610487.114794020]: Found parameter: tracking_rate_hz, value: 100[0m
+[0m[INFO] [1793610487.118888438]: Found parameter: TS_HISTORY_LENGTH, value: 100[0m
+[0m[INFO] [1793610487.123029804]: Found parameter: REF_HISTORY_LENGTH, value: 10[0m
+[0m[INFO] [1793610487.126308673]: Found parameter: SAVE_TRAJECTORY, value: 1[0m
+[0m[INFO] [1793610487.129531038]: Found parameter: VISUALIZE_TRAJECTORY, value: 1[0m
+[0m[INFO] [1793610487.132960016]: Found parameter: PATH_TO_SAVE_TRAJECTORY, value: /tmp/esvo_result/[0m
+[31m================================================================================REQUIRED process [esvo_Mapping-5] has died!
+process has died [pid 276, exit code -6, cmd /catkin_ws/devel/.private/esvo_core/lib/esvo_core/esvo_Mapping time_surface_left:=/TS_left time_surface_right:=/TS_right stamped_pose:=/esvo_tracking/pose_pub events_left:=/davis/left/events events_right:=/davis/right/events __name:=esvo_Mapping __log:=/root/.ros/log/ea011070-d69c-11f1-9030-82b19aed28e8/esvo_Mapping-5.log].
+log file: /root/.ros/log/ea011070-d69c-11f1-9030-82b19aed28e8/esvo_Mapping-5*.log
+Initiating shutdown!
+================================================================================[0m
+... logging to /root/.ros/log/ea011070-d69c-11f1-9030-82b19aed28e8/roslaunch-68f31e252e07-247.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/catkin_ws/src/ESVO/esvo_core/launch/system/system_upenn_headless.launch
+[1mstarted roslaunch server http://68f31e252e07:41833/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /TimeSurface_left/decay_ms: 30
+ * /TimeSurface_left/ignore_polarity: True
+ * /TimeSurface_left/max_event_queue_len: 20
+ * /TimeSurface_left/median_blur_kernel_size: 1
+ * /TimeSurface_left/time_surface_mode: 0
+ * /TimeSurface_left/use_sim_time: True
+ * /TimeSurface_right/decay_ms: 30
+ * /TimeSurface_right/ignore_polarity: True
+ * /TimeSurface_right/max_event_queue_len: 20
+ * /TimeSurface_right/median_blur_kernel_size: 1
+ * /TimeSurface_right/time_surface_mode: 0
+ * /TimeSurface_right/use_sim_time: True
+ * /esvo_Mapping/BM_ZNCC_Threshold: 0.1
+ * /esvo_Mapping/BM_bUpDownConfiguration: False
+ * /esvo_Mapping/BM_half_slice_thickness: 0.001
+ * /esvo_Mapping/BM_max_disparity: 40
+ * /esvo_Mapping/BM_min_disparity: 1
+ * /esvo_Mapping/BM_step: 1
+ * /esvo_Mapping/Denoising: False
+ * /esvo_Mapping/FUSION_STRATEGY: CONST_POINTS
+ * /esvo_Mapping/INIT_SGM_DP_NUM_THRESHOLD: 500
+ * /esvo_Mapping/LSnorm: Tdist
+ * /esvo_Mapping/NumGPC_added_per_refresh: 3000
+ * /esvo_Mapping/PROCESS_EVENT_NUM: 1000
+ * /esvo_Mapping/Regularization: False
+ * /esvo_Mapping/SmoothTimeSurface: False
+ * /esvo_Mapping/TS_HISTORY_LENGTH: 100
+ * /esvo_Mapping/Tdist_nu: 2.182
+ * /esvo_Mapping/Tdist_scale: 17.277
+ * /esvo_Mapping/Tdist_stdvar: 59.763
+ * /esvo_Mapping/age_max_range: 10
+ * /esvo_Mapping/age_vis_threshold: 1
+ * /esvo_Mapping/bVisualizeGlobalPC: True
+ * /esvo_Mapping/calibInfoDir: /catkin_ws/src/ES...
+ * /esvo_Mapping/dvs_frame_id: dvs
+ * /esvo_Mapping/fusion_radius: 0
+ * /esvo_Mapping/invDepth_max_range: 1.0
+ * /esvo_Mapping/invDepth_min_range: 0.16
+ * /esvo_Mapping/mapping_rate_hz: 20
+ * /esvo_Mapping/maxNumFusionFrames: 40
+ * /esvo_Mapping/maxNumFusionPoints: 3000
+ * /esvo_Mapping/patch_size_X: 15
+ * /esvo_Mapping/patch_size_Y: 7
+ * /esvo_Mapping/residual_vis_threshold: 20
+ * /esvo_Mapping/stdVar_vis_threshold: 0.15
+ * /esvo_Mapping/visualizeGPC_interval: 1
+ * /esvo_Mapping/visualize_range: 5.0
+ * /esvo_Mapping/world_frame_id: map
+ * /esvo_Tracking/BATCH_SIZE: 300
+ * /esvo_Tracking/LSnorm: Huber
+ * /esvo_Tracking/MAX_ITERATION: 10
+ * /esvo_Tracking/MAX_REGISTRATION_POINTS: 2000
+ * /esvo_Tracking/MIN_NUM_EVENTS: 1000
+ * /esvo_Tracking/PATH_TO_SAVE_TRAJECTORY: /tmp/esvo_result/
+ * /esvo_Tracking/REF_HISTORY_LENGTH: 10
+ * /esvo_Tracking/RegProblemType: 1
+ * /esvo_Tracking/SAVE_TRAJECTORY: True
+ * /esvo_Tracking/TS_HISTORY_LENGTH: 100
+ * /esvo_Tracking/VISUALIZE_TRAJECTORY: True
+ * /esvo_Tracking/calibInfoDir: /catkin_ws/src/ES...
+ * /esvo_Tracking/dvs_frame_id: dvs
+ * /esvo_Tracking/huber_threshold: 50
+ * /esvo_Tracking/invDepth_max_range: 1.0
+ * /esvo_Tracking/invDepth_min_range: 0.16
+ * /esvo_Tracking/kernelSize: 5
+ * /esvo_Tracking/patch_size_X: 1
+ * /esvo_Tracking/patch_size_Y: 1
+ * /esvo_Tracking/tracking_rate_hz: 100
+ * /esvo_Tracking/world_frame_id: map
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /use_sim_time: True
+
+NODES
+  /
+    TimeSurface_left (esvo_time_surface/esvo_time_surface)
+    TimeSurface_right (esvo_time_surface/esvo_time_surface)
+    esvo_Mapping (esvo_core/esvo_Mapping)
+    esvo_Tracking (esvo_core/esvo_Tracking)
+    global_timer (rostopic/rostopic)
+
+auto-starting new master
+[1mprocess[master]: started with pid [256][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/catkin_ws/src/ESVO/esvo_core/launch/system/system_upenn_headless.launch http://localhost:11311
+[1msetting /run_id to ea011070-d69c-11f1-9030-82b19aed28e8[0m
+[1mprocess[rosout-1]: started with pid [266][0m
+started core service [/rosout]
+[1mprocess[TimeSurface_left-2]: started with pid [273][0m
+[1mprocess[TimeSurface_right-3]: started with pid [274][0m
+[1mprocess[global_timer-4]: started with pid [275][0m
+[1mprocess[esvo_Mapping-5]: started with pid [276][0m
+[1mprocess[esvo_Tracking-6]: started with pid [277][0m
+[esvo_Tracking-6] killing on exit
+[esvo_Mapping-5] killing on exit
+[global_timer-4] killing on exit
+[TimeSurface_right-3] killing on exit
+[TimeSurface_left-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

@@ -1,0 +1,13 @@
+{
+  "name": "ESVO pilot",
+  "build": { "dockerfile": "../Dockerfile", "context": ".." },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/work,type=bind",
+  "workspaceFolder": "/work",
+  "postCreateCommand": "mkdir -p /work/runs /work/data && cat /catkin_ws/ESVO_COMMIT.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"],
+      "settings": { "terminal.integrated.defaultProfile.linux": "bash" }
+    }
+  }
+}

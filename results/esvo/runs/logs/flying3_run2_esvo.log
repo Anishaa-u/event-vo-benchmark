@@ -1,0 +1,811 @@
+[33m[WARN] [1793611529.537932333]: Cannot find value for parameter: ITERATION_OPTIMIZATION, assigning default: 10[0m
+[33m[WARN] [1793611529.540222592]: Cannot find value for parameter: RegularizationRadius, assigning default: 5[0m
+[33m[WARN] [1793611529.542689102]: Cannot find value for parameter: RegularizationMinNeighbours, assigning default: 8[0m
+[33m[WARN] [1793611529.545373103]: Cannot find value for parameter: RegularizationMinCloseNeighbours, assigning default: 8[0m
+[33m[WARN] [1793611529.612272177]: Cannot find value for parameter: ResetButton, assigning default: 0[0m
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I1102 09:25:37.571297 27297 esvo_Mapping.cpp:481] ********** Initialization (SGM) returns 605 points.
+I1102 09:25:37.575248 27297 esvo_Mapping.cpp:237] Initialization is successfully done!
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I1102 09:25:42.595499 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:42.597061 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:42.840325 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:42.841125 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:42.922472 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:42.923990 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:43.079902 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:43.080843 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:43.351807 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:43.354461 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:43.432420 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:43.433635 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:43.471289 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:43.472088 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:43.877424 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:43.878121 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:47.670128 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:47.670886 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:47.746740 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:47.747468 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:48.546132 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:48.547150 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:48.745188 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:48.745834 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:49.715202 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:49.716056 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:50.032796 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:50.033577 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:50.429136 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:50.429805 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:50.875182 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:50.875988 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:51.191191 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:51.191941 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:51.274194 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:51.274981 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:51.641062 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:51.642052 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:51.873576 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:51.874300 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:52.273600 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:52.274159 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:52.476197 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:52.476930 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:52.516991 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:52.517904 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:52.598510 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:52.599995 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:52.636089 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:52.636847 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:52.682710 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:52.683398 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:52.721844 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:52.722659 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:52.841187 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:52.841990 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:52.882853 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:52.883740 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:54.195866 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:54.198810 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:25:58.427848 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:25:58.428553 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:00.426016 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:00.426769 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:07.068630 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:07.069211 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:09.995190 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:09.995927 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:10.796914 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:10.797672 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:10.914371 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:10.915567 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:10.961982 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:10.962800 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.079644 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.080422 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.119663 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.120659 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.199569 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.200484 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.237784 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.238564 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.273322 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.274159 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.311164 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.311878 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.352200 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.353046 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.401008 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.401831 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.438321 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.439241 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.479775 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.480492 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.515924 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.516573 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.556162 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.556813 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.599279 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.600052 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.639676 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.640403 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.668720 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.669137 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.707960 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.708585 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.747583 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.748641 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.797499 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.798424 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.835656 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.836527 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.877130 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.878333 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.910501 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.911324 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:11.948210 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:11.948887 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:12.000790 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:12.002465 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:12.077034 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:12.077754 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:12.119081 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:12.119856 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:12.149152 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:12.149812 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:12.196405 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:12.197216 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:12.240309 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:12.241168 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:12.277812 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:12.278636 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:12.357050 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:12.362768 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:12.482343 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:12.483057 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:12.663595 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:12.664506 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:12.746059 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:12.747757 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:13.000792 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:13.001569 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:13.239485 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:13.240199 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:13.474987 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:13.475803 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:13.679726 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:13.680604 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:13.746796 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:13.747547 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:13.879057 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:13.879853 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:13.956707 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:13.957603 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.115571 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.116374 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.197052 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.197912 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.241137 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.241978 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.278203 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.279053 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.321642 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.322499 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.357229 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.357856 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.393544 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.394173 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.438654 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.439312 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.478593 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.479185 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.519464 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.520187 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.553908 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.554669 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.594229 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.594921 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.636792 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.637455 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.676772 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.677527 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.715354 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.716027 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.747382 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.761324 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.793262 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.793998 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.827261 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.828109 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.907747 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.908459 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:14.946023 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:14.946780 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:15.028388 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:15.029130 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:15.066953 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:15.067737 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:15.145301 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:15.145926 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:15.187551 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:15.190655 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:15.235399 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:15.236107 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:15.273520 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:15.274236 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:15.516202 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:15.516880 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:15.843053 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:15.843837 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.127807 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.128623 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.201701 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.202618 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.250658 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.251533 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.321206 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.322046 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.352815 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.353461 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.441560 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.442286 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.481576 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.482651 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.527257 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.528201 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.598145 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.599193 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.650034 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.651659 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.691030 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.691982 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.726819 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.727586 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.799526 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.802865 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.844451 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.845166 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.873629 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.874275 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.913102 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.913857 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.953605 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.954257 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:16.993968 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:16.994696 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.034745 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.036937 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.070400 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.071014 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.145594 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.146163 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.188465 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.189533 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.440500 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.441280 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.516532 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.517238 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.593190 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.593947 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.681860 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.682866 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.725512 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.726383 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.792440 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.793079 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.843425 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.844151 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:17.913455 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:17.914217 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:18.038064 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:18.042342 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:18.233275 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:18.234068 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:18.926608 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:18.927452 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:19.163853 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:19.164597 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:19.276201 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:19.276875 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:19.468674 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:19.469506 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:19.949158 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:19.950057 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:20.106004 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:20.106536 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:20.347940 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:20.348522 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:20.506999 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:20.507520 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:22.075202 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:22.075992 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.040416 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.041090 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.124552 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.125433 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.161085 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.161896 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.240540 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.241189 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.282169 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.282922 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.324447 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.325299 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.365548 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.366333 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.481772 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.482668 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.523541 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.524459 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.563344 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.564321 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.644990 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.645721 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.690030 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.690817 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.731360 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.732259 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.812623 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.813702 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.886811 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.888412 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:38.926710 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:38.927701 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:39.003659 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:39.004560 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:39.131246 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:39.132170 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:39.249140 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:39.250041 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:39.482813 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:39.483618 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:39.928030 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:39.928911 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:40.328150 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:40.328991 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:40.526801 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:40.531917 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:40.792726 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:40.793581 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:40.914852 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:40.915750 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:40.994189 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:40.995033 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:41.027942 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:41.028517 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:41.124929 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:41.125708 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:41.228446 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:41.229142 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:41.527247 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:41.528033 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:41.599752 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:41.600561 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:41.723881 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:41.724664 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:41.842144 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:41.843019 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:41.972574 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:41.973485 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:42.044677 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:42.045568 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:42.162900 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:42.163848 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:42.366012 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:42.366719 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:42.601763 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:42.602468 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:43.012115 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:43.013250 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:43.121182 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:43.122183 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:43.362949 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:43.363868 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:44.944036 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:44.944906 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:46.318809 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:46.319654 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:46.431653 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:46.432327 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:46.674331 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:46.675189 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:46.720975 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:46.721971 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:47.121038 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:47.121883 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:47.593403 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:47.594115 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:47.972194 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:47.972993 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:48.043665 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:48.044377 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:49.875329 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:49.876304 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.005779 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.006636 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.043738 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.044436 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.072779 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.073575 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.120648 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.121484 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.229962 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.230639 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.309005 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.309757 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.349237 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.349846 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.464869 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.465583 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.523082 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.523895 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.720745 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.721454 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.767079 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.767930 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.845348 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.846006 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.882471 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.883205 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:50.963845 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:50.964713 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:51.162333 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:51.163066 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:51.676076 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:51.676762 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:52.157697 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:52.158499 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:52.879331 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:52.880208 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:26:53.582217 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:26:53.582880 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:10.706872 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:10.707585 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:11.183663 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:11.184396 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:11.349664 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:11.350322 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:11.714891 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:11.715467 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:12.155198 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:12.155902 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:12.351413 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:12.352160 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:12.387663 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:12.388396 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:12.427284 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:12.427938 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:12.508002 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:12.508761 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:12.585906 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:12.586670 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:12.627421 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:12.628014 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:12.717427 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:12.718073 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:12.882042 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:12.883071 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:12.923251 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:12.923859 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:12.965500 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:12.966356 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.036859 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.037513 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.070355 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.070902 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.125397 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.126169 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.166857 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.167629 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.204218 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.204994 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.241158 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.242007 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.283118 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.284014 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.322055 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.322957 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.355417 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.356153 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.399704 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.400557 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.433107 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.433867 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.473419 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.474031 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.507357 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.508055 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.552616 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.553494 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.594663 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.595662 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.627362 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.628014 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.664860 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.665453 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.707463 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.709210 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.742906 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.743541 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.781845 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.782528 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.826223 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.826792 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.863729 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.864416 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.906127 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.906697 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.950724 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.951573 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:13.985641 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:13.986483 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.026733 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.027439 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.069119 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.069794 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.112746 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.113406 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.195382 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.196192 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.228500 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.229272 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.266898 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.267679 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.309293 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.309990 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.356801 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.357559 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.394022 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.395179 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.429550 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.430408 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.462982 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.463544 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.509955 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.510685 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.547660 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.548207 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.583055 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.583675 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.625232 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.625715 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.662787 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.663365 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.701274 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.703182 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.864641 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.865288 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:14.908332 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:14.908962 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.066969 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.067798 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.273937 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.274508 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.360523 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.361289 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.435935 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.436527 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.468446 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.469161 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.522701 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.523375 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.597291 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.597946 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.631522 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.632130 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.666023 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.666880 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.712522 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.713266 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.826362 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.826974 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.864313 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.864806 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.949188 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.949903 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:15.992419 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:15.993034 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.025513 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.026021 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.065689 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.066409 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.151727 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.152365 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.184471 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.185075 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.223313 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.223863 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.262773 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.263303 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.318123 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.318794 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.358603 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.359447 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.399757 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.400444 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.435521 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.436307 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.479944 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.480666 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.524518 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.525154 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.563859 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.564548 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.606961 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.607910 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.650774 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.651625 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.678231 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.678854 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.713738 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.714389 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.749172 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.749718 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.785341 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.786019 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.826953 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.827530 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.864964 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.865438 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:16.911659 27295 RegProblemSolverLM.cpp:49] resetRegProblem RESET fails for no enough events coming in.
+I1102 09:27:16.912179 27295 RegProblemSolverLM.cpp:50] However, the system remains to work.
+I1102 09:27:20.954624 27295 esvo_Tracking.cpp:100] The tracking node is terminated manually...
+I1102 09:27:20.955121 27297 esvo_Mapping.cpp:198] The Mapping node is terminated manually...
+I1102 09:27:20.955163 27295 esvo_Tracking.cpp:196] pose size: 2341
+I1102 09:27:20.955741 27295 esvo_Tracking.cpp:197] refPCMap_.size(): 10, TS_history_.size(): 100
+I1102 09:27:20.956053 27295 esvo_Tracking.cpp:433] Saving trajectory to /tmp/esvo_result/result.txt ......
+I1102 09:27:20.976756 27295 esvo_Tracking.cpp:461] Saving trajectory to /tmp/esvo_result/result.txt. Done !!!!!!.
+[0m[INFO] [1793611529.236323612]: Found parameter: calibInfoDir, value: /catkin_ws/src/ESVO/esvo_core/calib/upenn[0m
+[0m[INFO] [1793611529.372883267]: Found parameter: RegProblemType, value: 1[0m
+[0m[INFO] [1793611529.378950543]: Found parameter: patch_size_X, value: 1[0m
+[0m[INFO] [1793611529.383914164]: Found parameter: patch_size_Y, value: 1[0m
+[0m[INFO] [1793611529.387973303]: Found parameter: kernelSize, value: 5[0m
+[0m[INFO] [1793611529.391909374]: Found parameter: LSnorm, value: Huber[0m
+[0m[INFO] [1793611529.396067452]: Found parameter: huber_threshold, value: 50[0m
+[0m[INFO] [1793611529.400550648]: Found parameter: invDepth_min_range, value: 0.16[0m
+[0m[INFO] [1793611529.407570811]: Found parameter: invDepth_max_range, value: 1[0m
+[0m[INFO] [1793611529.414157511]: Found parameter: MIN_NUM_EVENTS, value: 1000[0m
+[0m[INFO] [1793611529.419047878]: Found parameter: MAX_REGISTRATION_POINTS, value: 2000[0m
+[0m[INFO] [1793611529.424254935]: Found parameter: BATCH_SIZE, value: 300[0m
+[0m[INFO] [1793611529.430078870]: Found parameter: MAX_ITERATION, value: 10[0m
+[0m[INFO] [1793611529.436023998]: Found parameter: dvs_frame_id, value: dvs[0m
+[0m[INFO] [1793611529.441036110]: Found parameter: world_frame_id, value: map[0m
+[0m[INFO] [1793611529.445789650]: Found parameter: tracking_rate_hz, value: 100[0m
+[0m[INFO] [1793611529.451894587]: Found parameter: TS_HISTORY_LENGTH, value: 100[0m
+[0m[INFO] [1793611529.455703644]: Found parameter: REF_HISTORY_LENGTH, value: 10[0m
+[0m[INFO] [1793611529.459621497]: Found parameter: SAVE_TRAJECTORY, value: 1[0m
+[0m[INFO] [1793611529.463409463]: Found parameter: VISUALIZE_TRAJECTORY, value: 1[0m
+[0m[INFO] [1793611529.470217587]: Found parameter: PATH_TO_SAVE_TRAJECTORY, value: /tmp/esvo_result/[0m
+[0m[INFO] [1793611529.413641084]: Found parameter: calibInfoDir, value: /catkin_ws/src/ESVO/esvo_core/calib/upenn[0m
+[0m[INFO] [1793611529.521274328]: Found parameter: patch_size_X, value: 15[0m
+[0m[INFO] [1793611529.525373816]: Found parameter: patch_size_Y, value: 7[0m
+[0m[INFO] [1793611529.528794381]: Found parameter: LSnorm, value: Tdist[0m
+[0m[INFO] [1793611529.532915547]: Found parameter: Tdist_nu, value: 2.182[0m
+[0m[INFO] [1793611529.536665766]: Found parameter: Tdist_scale, value: 17.277[0m
+[0m[INFO] [1793611529.550976464]: Found parameter: SmoothTimeSurface, value: 0[0m
+[0m[INFO] [1793611529.554962132]: Found parameter: dvs_frame_id, value: dvs[0m
+[0m[INFO] [1793611529.558193194]: Found parameter: world_frame_id, value: map[0m
+[0m[INFO] [1793611529.561719225]: Found parameter: invDepth_min_range, value: 0.16[0m
+[0m[INFO] [1793611529.564271630]: Found parameter: invDepth_max_range, value: 1[0m
+[0m[INFO] [1793611529.567371876]: Found parameter: patch_size_X, value: 15[0m
+[0m[INFO] [1793611529.570877274]: Found parameter: patch_size_Y, value: 7[0m
+[0m[INFO] [1793611529.574669554]: Found parameter: residual_vis_threshold, value: 20[0m
+[0m[INFO] [1793611529.577864207]: Found parameter: stdVar_vis_threshold, value: 0.15[0m
+[0m[INFO] [1793611529.580639481]: Found parameter: age_max_range, value: 10[0m
+[0m[INFO] [1793611529.584140467]: Found parameter: age_vis_threshold, value: 1[0m
+[0m[INFO] [1793611529.587275975]: Found parameter: fusion_radius, value: 0[0m
+[0m[INFO] [1793611529.590381055]: Found parameter: maxNumFusionFrames, value: 40[0m
+[0m[INFO] [1793611529.593614563]: Found parameter: FUSION_STRATEGY, value: CONST_POINTS[0m
+[0m[INFO] [1793611529.600640393]: Found parameter: maxNumFusionPoints, value: 3000[0m
+[0m[INFO] [1793611529.603978837]: Found parameter: INIT_SGM_DP_NUM_THRESHOLD, value: 500[0m
+[0m[INFO] [1793611529.607609567]: Found parameter: Denoising, value: 0[0m
+[0m[INFO] [1793611529.610945036]: Found parameter: Regularization, value: 0[0m
+[0m[INFO] [1793611529.620245624]: Found parameter: bVisualizeGlobalPC, value: 1[0m
+[0m[INFO] [1793611529.631619207]: Found parameter: visualizeGPC_interval, value: 1[0m
+[0m[INFO] [1793611529.635149445]: Found parameter: visualize_range, value: 5[0m
+[0m[INFO] [1793611529.637951074]: Found parameter: NumGPC_added_per_refresh, value: 3000[0m
+[0m[INFO] [1793611529.641531851]: Found parameter: PROCESS_EVENT_NUM, value: 1000[0m
+[0m[INFO] [1793611529.645689860]: Found parameter: TS_HISTORY_LENGTH, value: 100[0m
+[0m[INFO] [1793611529.652890828]: Found parameter: mapping_rate_hz, value: 20[0m
+[0m[INFO] [1793611529.656776854]: Found parameter: BM_half_slice_thickness, value: 0.001[0m
+[0m[INFO] [1793611529.660801621]: Found parameter: patch_size_X, value: 15[0m
+[0m[INFO] [1793611529.665409057]: Found parameter: patch_size_Y, value: 7[0m
+[0m[INFO] [1793611529.669595269]: Found parameter: BM_min_disparity, value: 1[0m
+[0m[INFO] [1793611529.673425451]: Found parameter: BM_max_disparity, value: 40[0m
+[0m[INFO] [1793611529.676916615]: Found parameter: BM_step, value: 1[0m
+[0m[INFO] [1793611529.680889684]: Found parameter: BM_ZNCC_Threshold, value: 0.1[0m
+[0m[INFO] [1793611529.684850603]: Found parameter: BM_bUpDownConfiguration, value: 0[0m
+... logging to /root/.ros/log/5776370a-d69f-11f1-8e94-82b19aed28e8/roslaunch-68f31e252e07-27244.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/catkin_ws/src/ESVO/esvo_core/launch/system/system_upenn_headless.launch
+[1mstarted roslaunch server http://68f31e252e07:38169/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /TimeSurface_left/decay_ms: 30
+ * /TimeSurface_left/ignore_polarity: True
+ * /TimeSurface_left/max_event_queue_len: 20
+ * /TimeSurface_left/median_blur_kernel_size: 1
+ * /TimeSurface_left/time_surface_mode: 0
+ * /TimeSurface_left/use_sim_time: True
+ * /TimeSurface_right/decay_ms: 30
+ * /TimeSurface_right/ignore_polarity: True
+ * /TimeSurface_right/max_event_queue_len: 20
+ * /TimeSurface_right/median_blur_kernel_size: 1
+ * /TimeSurface_right/time_surface_mode: 0
+ * /TimeSurface_right/use_sim_time: True
+ * /esvo_Mapping/BM_ZNCC_Threshold: 0.1
+ * /esvo_Mapping/BM_bUpDownConfiguration: False
+ * /esvo_Mapping/BM_half_slice_thickness: 0.001
+ * /esvo_Mapping/BM_max_disparity: 40
+ * /esvo_Mapping/BM_min_disparity: 1
+ * /esvo_Mapping/BM_step: 1
+ * /esvo_Mapping/Denoising: False
+ * /esvo_Mapping/FUSION_STRATEGY: CONST_POINTS
+ * /esvo_Mapping/INIT_SGM_DP_NUM_THRESHOLD: 500
+ * /esvo_Mapping/LSnorm: Tdist
+ * /esvo_Mapping/NumGPC_added_per_refresh: 3000
+ * /esvo_Mapping/PROCESS_EVENT_NUM: 1000
+ * /esvo_Mapping/Regularization: False
+ * /esvo_Mapping/SmoothTimeSurface: False
+ * /esvo_Mapping/TS_HISTORY_LENGTH: 100
+ * /esvo_Mapping/Tdist_nu: 2.182
+ * /esvo_Mapping/Tdist_scale: 17.277
+ * /esvo_Mapping/Tdist_stdvar: 59.763
+ * /esvo_Mapping/age_max_range: 10
+ * /esvo_Mapping/age_vis_threshold: 1
+ * /esvo_Mapping/bVisualizeGlobalPC: True
+ * /esvo_Mapping/calibInfoDir: /catkin_ws/src/ES...
+ * /esvo_Mapping/dvs_frame_id: dvs
+ * /esvo_Mapping/fusion_radius: 0
+ * /esvo_Mapping/invDepth_max_range: 1.0
+ * /esvo_Mapping/invDepth_min_range: 0.16
+ * /esvo_Mapping/mapping_rate_hz: 20
+ * /esvo_Mapping/maxNumFusionFrames: 40
+ * /esvo_Mapping/maxNumFusionPoints: 3000
+ * /esvo_Mapping/patch_size_X: 15
+ * /esvo_Mapping/patch_size_Y: 7
+ * /esvo_Mapping/residual_vis_threshold: 20
+ * /esvo_Mapping/stdVar_vis_threshold: 0.15
+ * /esvo_Mapping/visualizeGPC_interval: 1
+ * /esvo_Mapping/visualize_range: 5.0
+ * /esvo_Mapping/world_frame_id: map
+ * /esvo_Tracking/BATCH_SIZE: 300
+ * /esvo_Tracking/LSnorm: Huber
+ * /esvo_Tracking/MAX_ITERATION: 10
+ * /esvo_Tracking/MAX_REGISTRATION_POINTS: 2000
+ * /esvo_Tracking/MIN_NUM_EVENTS: 1000
+ * /esvo_Tracking/PATH_TO_SAVE_TRAJECTORY: /tmp/esvo_result/
+ * /esvo_Tracking/REF_HISTORY_LENGTH: 10
+ * /esvo_Tracking/RegProblemType: 1
+ * /esvo_Tracking/SAVE_TRAJECTORY: True
+ * /esvo_Tracking/TS_HISTORY_LENGTH: 100
+ * /esvo_Tracking/VISUALIZE_TRAJECTORY: True
+ * /esvo_Tracking/calibInfoDir: /catkin_ws/src/ES...
+ * /esvo_Tracking/dvs_frame_id: dvs
+ * /esvo_Tracking/huber_threshold: 50
+ * /esvo_Tracking/invDepth_max_range: 1.0
+ * /esvo_Tracking/invDepth_min_range: 0.16
+ * /esvo_Tracking/kernelSize: 5
+ * /esvo_Tracking/patch_size_X: 1
+ * /esvo_Tracking/patch_size_Y: 1
+ * /esvo_Tracking/tracking_rate_hz: 100
+ * /esvo_Tracking/world_frame_id: map
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /use_sim_time: True
+
+NODES
+  /
+    TimeSurface_left (esvo_time_surface/esvo_time_surface)
+    TimeSurface_right (esvo_time_surface/esvo_time_surface)
+    esvo_Mapping (esvo_core/esvo_Mapping)
+    esvo_Tracking (esvo_core/esvo_Tracking)
+    global_timer (rostopic/rostopic)
+
+auto-starting new master
+[1mprocess[master]: started with pid [27253][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/catkin_ws/src/ESVO/esvo_core/launch/system/system_upenn_headless.launch http://localhost:11311
+[1msetting /run_id to 5776370a-d69f-11f1-8e94-82b19aed28e8[0m
+[1mprocess[rosout-1]: started with pid [27263][0m
+started core service [/rosout]
+[1mprocess[TimeSurface_left-2]: started with pid [27270][0m
+[1mprocess[TimeSurface_right-3]: started with pid [27271][0m
+[1mprocess[global_timer-4]: started with pid [27272][0m
+[1mprocess[esvo_Mapping-5]: started with pid [27273][0m
+[1mprocess[esvo_Tracking-6]: started with pid [27274][0m
+[esvo_Tracking-6] killing on exit
+[esvo_Mapping-5] killing on exit
+[global_timer-4] killing on exit
+[TimeSurface_right-3] killing on exit
+[TimeSurface_left-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
