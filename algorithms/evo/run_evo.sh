@@ -1,14 +1,14 @@
 #!/bin/bash
 # One EVO run on an RPG Event Camera Dataset sequence, end to end. Run inside the container from /work:
 #     bash run_evo.sh shapes_6dof 1
-# Uses EVO's DAVIS-ijrr template (rpg_headless.launch) with auto-trigger and bootstrapping from the
-# sensor's frames (BOOT=frames, the method EVO's README calls most reliable) or from events
-# (BOOT=events, EVO's default). Plays the bag at RATE (default 1.0), records /evo/pose, profiles CPU
-# and memory, and writes the trajectory to runs/<seq>_run<k>.txt.
+# Defaults reproduce the reported protocol: EVO's bag-playback configuration (flyingroom_headless.launch)
+# with the RPG camera calibration (EXTRA=camera_name:=DAVIS-ijrr), auto-trigger, bootstrapping from the
+# sensor's frames (BOOT=frames; BOOT=events for EVO's default) and playback at RATE=0.5. Records /evo/pose,
+# profiles CPU and memory, and writes the trajectory to runs/<seq>_run<k>.txt.
 SEQ=$1; RUN=$2
-RATE=${RATE:-1.0}
+RATE=${RATE:-0.5}
 BOOT=${BOOT:-frames}
-LAUNCH_FILE=${LAUNCH_FILE:-rpg_headless.launch}; EXTRA=${EXTRA:-}; EXTRA=${EXTRA:-}
+LAUNCH_FILE=${LAUNCH_FILE:-flyingroom_headless.launch}; EXTRA=${EXTRA-camera_name:=DAVIS-ijrr}
 BAG=${BAG:-/tmp/$SEQ.bag}
 # play from the container's own disk, not the slower Windows-mounted folder
 [ -f $BAG ] || cp /work/data/$(basename $BAG) $BAG
